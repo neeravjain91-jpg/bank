@@ -2,7 +2,7 @@
   "metadata": {
     "evaluation_dataset": "Synthetic Banking Narrative Independent Evaluation Suite",
     "total_examples": 80,
-    "timestamp": "2026-10-27 07:50:32 UTC",
+    "timestamp": "2026-10-27 17:47:05 UTC",
     "categories": [
       "INCOME_SALARY",
       "TRANSFER_P2P",
@@ -22,8 +22,8 @@
     "macro_precision": 88.59,
     "macro_recall": 83.75,
     "macro_f1": 84.76,
-    "avg_latency_ms": 0.32,
-    "total_time_seconds": 0.03,
+    "avg_latency_ms": 0.29,
+    "total_time_seconds": 0.02,
     "category_metrics": {
       "INCOME_SALARY": {
         "support": 10,
@@ -187,7 +187,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.5642,
-        "latency_ms": 1.0,
+        "latency_ms": 2.0,
         "correct": true
       },
       {
@@ -196,7 +196,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.3688,
-        "latency_ms": 1.0,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -205,7 +205,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.4957,
-        "latency_ms": 1.09,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -214,7 +214,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "OTHER",
         "confidence": 0.1942,
-        "latency_ms": 0.0,
+        "latency_ms": 1.0,
         "correct": false
       },
       {
@@ -223,7 +223,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.3865,
-        "latency_ms": 0.53,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -241,7 +241,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.3754,
-        "latency_ms": 0.0,
+        "latency_ms": 1.0,
         "correct": true
       },
       {
@@ -250,7 +250,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "BANK_FEES",
         "confidence": 0.2843,
-        "latency_ms": 1.01,
+        "latency_ms": 0.0,
         "correct": false
       },
       {
@@ -268,7 +268,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2932,
-        "latency_ms": 0.0,
+        "latency_ms": 0.89,
         "correct": true
       },
       {
@@ -286,7 +286,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5012,
-        "latency_ms": 0.52,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -295,7 +295,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.3483,
-        "latency_ms": 0.0,
+        "latency_ms": 1.11,
         "correct": true
       },
       {
@@ -331,7 +331,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4642,
-        "latency_ms": 0.0,
+        "latency_ms": 0.99,
         "correct": true
       },
       {
@@ -340,7 +340,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.2427,
-        "latency_ms": 1.53,
+        "latency_ms": 0.91,
         "correct": true
       },
       {
@@ -376,7 +376,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "OTHER",
         "confidence": 0.2179,
-        "latency_ms": 1.04,
+        "latency_ms": 1.1,
         "correct": false
       },
       {
@@ -394,7 +394,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "OTHER",
         "confidence": 0.2015,
-        "latency_ms": 0.99,
+        "latency_ms": 0.0,
         "correct": false
       },
       {
@@ -412,7 +412,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.306,
-        "latency_ms": 0.0,
+        "latency_ms": 1.0,
         "correct": true
       },
       {
@@ -421,7 +421,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.3345,
-        "latency_ms": 1.01,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -448,7 +448,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "OTHER",
         "confidence": 0.1716,
-        "latency_ms": 0.0,
+        "latency_ms": 1.01,
         "correct": false
       },
       {
@@ -457,7 +457,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.4325,
-        "latency_ms": 1.0,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -466,7 +466,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.4118,
-        "latency_ms": 0.51,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -475,7 +475,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.434,
-        "latency_ms": 0.0,
+        "latency_ms": 0.93,
         "correct": true
       },
       {
@@ -502,7 +502,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.3337,
-        "latency_ms": 1.03,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -520,7 +520,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.2825,
-        "latency_ms": 0.0,
+        "latency_ms": 1.06,
         "correct": true
       },
       {
@@ -538,7 +538,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.3548,
-        "latency_ms": 1.0,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -556,7 +556,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.2294,
-        "latency_ms": 0.0,
+        "latency_ms": 1.01,
         "correct": true
       },
       {
@@ -574,7 +574,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.5926,
-        "latency_ms": 1.28,
+        "latency_ms": 0.94,
         "correct": true
       },
       {
@@ -592,7 +592,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.7724,
-        "latency_ms": 0.98,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -610,7 +610,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.574,
-        "latency_ms": 0.0,
+        "latency_ms": 0.96,
         "correct": true
       },
       {
@@ -619,7 +619,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.7039,
-        "latency_ms": 0.99,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -655,7 +655,7 @@
         "expected": "BANK_FEES",
         "predicted": "ATM_CASH",
         "confidence": 0.5003,
-        "latency_ms": 1.03,
+        "latency_ms": 1.11,
         "correct": false
       },
       {
@@ -691,7 +691,7 @@
         "expected": "BANK_FEES",
         "predicted": "BANK_FEES",
         "confidence": 0.2742,
-        "latency_ms": 0.99,
+        "latency_ms": 1.0,
         "correct": true
       },
       {
@@ -727,7 +727,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "INVESTMENT_DIVIDEND",
         "confidence": 0.4243,
-        "latency_ms": 1.0,
+        "latency_ms": 0.94,
         "correct": true
       },
       {
@@ -754,7 +754,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "OTHER",
         "confidence": 0.1988,
-        "latency_ms": 1.0,
+        "latency_ms": 0.0,
         "correct": false
       },
       {
@@ -763,7 +763,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "INVESTMENT_DIVIDEND",
         "confidence": 0.2439,
-        "latency_ms": 0.0,
+        "latency_ms": 1.07,
         "correct": true
       },
       {
@@ -790,7 +790,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "INVESTMENT_DIVIDEND",
         "confidence": 0.5224,
-        "latency_ms": 1.0,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -808,7 +808,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2307,
-        "latency_ms": 0.99,
+        "latency_ms": 1.05,
         "correct": false
       },
       {
@@ -835,7 +835,7 @@
         "expected": "OTHER",
         "predicted": "OTHER",
         "confidence": 0.5319,
-        "latency_ms": 1.0,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -844,7 +844,7 @@
         "expected": "OTHER",
         "predicted": "OTHER",
         "confidence": 0.1716,
-        "latency_ms": 0.0,
+        "latency_ms": 1.05,
         "correct": true
       },
       {
@@ -871,7 +871,7 @@
         "expected": "OTHER",
         "predicted": "OTHER",
         "confidence": 0.2859,
-        "latency_ms": 1.16,
+        "latency_ms": 0.0,
         "correct": true
       },
       {
@@ -880,7 +880,7 @@
         "expected": "OTHER",
         "predicted": "OTHER",
         "confidence": 0.2293,
-        "latency_ms": 0.0,
+        "latency_ms": 1.0,
         "correct": true
       },
       {
@@ -898,7 +898,7 @@
         "expected": "OTHER",
         "predicted": "OTHER",
         "confidence": 0.4006,
-        "latency_ms": 0.97,
+        "latency_ms": 0.0,
         "correct": true
       }
     ]
@@ -911,8 +911,8 @@
     "macro_precision": 56.73,
     "macro_recall": 41.25,
     "macro_f1": 37.33,
-    "avg_latency_ms": 95.59,
-    "total_time_seconds": 7.65,
+    "avg_latency_ms": 97.41,
+    "total_time_seconds": 7.79,
     "category_metrics": {
       "INCOME_SALARY": {
         "support": 10,
@@ -1076,7 +1076,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.914,
-        "latency_ms": 113.06,
+        "latency_ms": 118.85,
         "correct": true
       },
       {
@@ -1085,7 +1085,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.6978,
-        "latency_ms": 99.51,
+        "latency_ms": 101.5,
         "correct": true
       },
       {
@@ -1094,7 +1094,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.837,
-        "latency_ms": 96.3,
+        "latency_ms": 109.26,
         "correct": true
       },
       {
@@ -1103,7 +1103,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.4686,
-        "latency_ms": 104.17,
+        "latency_ms": 105.82,
         "correct": true
       },
       {
@@ -1112,7 +1112,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.8619,
-        "latency_ms": 95.55,
+        "latency_ms": 97.46,
         "correct": false
       },
       {
@@ -1121,7 +1121,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.6689,
-        "latency_ms": 94.38,
+        "latency_ms": 132.97,
         "correct": false
       },
       {
@@ -1130,7 +1130,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "OTHER",
         "confidence": 0.3977,
-        "latency_ms": 95.06,
+        "latency_ms": 101.54,
         "correct": false
       },
       {
@@ -1139,7 +1139,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.4453,
-        "latency_ms": 89.0,
+        "latency_ms": 101.2,
         "correct": true
       },
       {
@@ -1148,7 +1148,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.8216,
-        "latency_ms": 93.02,
+        "latency_ms": 101.73,
         "correct": true
       },
       {
@@ -1157,7 +1157,7 @@
         "expected": "INCOME_SALARY",
         "predicted": "INCOME_SALARY",
         "confidence": 0.5936,
-        "latency_ms": 93.11,
+        "latency_ms": 101.59,
         "correct": true
       },
       {
@@ -1166,7 +1166,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.6233,
-        "latency_ms": 98.77,
+        "latency_ms": 113.89,
         "correct": true
       },
       {
@@ -1175,7 +1175,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.7618,
-        "latency_ms": 99.92,
+        "latency_ms": 96.1,
         "correct": true
       },
       {
@@ -1184,7 +1184,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4738,
-        "latency_ms": 105.47,
+        "latency_ms": 101.31,
         "correct": true
       },
       {
@@ -1193,7 +1193,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5584,
-        "latency_ms": 117.32,
+        "latency_ms": 97.7,
         "correct": true
       },
       {
@@ -1202,7 +1202,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.7116,
-        "latency_ms": 100.67,
+        "latency_ms": 93.21,
         "correct": true
       },
       {
@@ -1211,7 +1211,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.2672,
-        "latency_ms": 110.65,
+        "latency_ms": 104.14,
         "correct": true
       },
       {
@@ -1220,7 +1220,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.8497,
-        "latency_ms": 99.56,
+        "latency_ms": 84.64,
         "correct": true
       },
       {
@@ -1229,7 +1229,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.7863,
-        "latency_ms": 97.39,
+        "latency_ms": 98.03,
         "correct": true
       },
       {
@@ -1238,7 +1238,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.9235,
-        "latency_ms": 103.44,
+        "latency_ms": 113.9,
         "correct": true
       },
       {
@@ -1247,7 +1247,7 @@
         "expected": "TRANSFER_P2P",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4094,
-        "latency_ms": 99.17,
+        "latency_ms": 98.53,
         "correct": true
       },
       {
@@ -1256,7 +1256,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.5338,
-        "latency_ms": 101.99,
+        "latency_ms": 105.22,
         "correct": true
       },
       {
@@ -1265,7 +1265,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.7246,
-        "latency_ms": 96.31,
+        "latency_ms": 115.51,
         "correct": true
       },
       {
@@ -1274,7 +1274,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5616,
-        "latency_ms": 95.73,
+        "latency_ms": 103.78,
         "correct": false
       },
       {
@@ -1283,7 +1283,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.2464,
-        "latency_ms": 95.25,
+        "latency_ms": 87.31,
         "correct": true
       },
       {
@@ -1292,7 +1292,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.4969,
-        "latency_ms": 99.07,
+        "latency_ms": 91.18,
         "correct": true
       },
       {
@@ -1301,7 +1301,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.5542,
-        "latency_ms": 95.23,
+        "latency_ms": 94.85,
         "correct": true
       },
       {
@@ -1310,7 +1310,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.9344,
-        "latency_ms": 83.6,
+        "latency_ms": 82.52,
         "correct": true
       },
       {
@@ -1319,7 +1319,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5537,
-        "latency_ms": 87.44,
+        "latency_ms": 85.14,
         "correct": false
       },
       {
@@ -1328,7 +1328,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.9848,
-        "latency_ms": 89.38,
+        "latency_ms": 83.7,
         "correct": true
       },
       {
@@ -1337,7 +1337,7 @@
         "expected": "MERCHANT_POS",
         "predicted": "MERCHANT_POS",
         "confidence": 0.3277,
-        "latency_ms": 92.79,
+        "latency_ms": 89.02,
         "correct": true
       },
       {
@@ -1346,7 +1346,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.4223,
-        "latency_ms": 85.63,
+        "latency_ms": 82.98,
         "correct": true
       },
       {
@@ -1355,7 +1355,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.7216,
-        "latency_ms": 94.14,
+        "latency_ms": 87.58,
         "correct": true
       },
       {
@@ -1364,7 +1364,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "OTHER",
         "confidence": 0.2459,
-        "latency_ms": 96.65,
+        "latency_ms": 84.6,
         "correct": false
       },
       {
@@ -1373,7 +1373,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "UTILITIES_SERVICES",
         "confidence": 0.3977,
-        "latency_ms": 104.67,
+        "latency_ms": 98.21,
         "correct": true
       },
       {
@@ -1382,7 +1382,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.3008,
-        "latency_ms": 99.56,
+        "latency_ms": 105.4,
         "correct": false
       },
       {
@@ -1391,7 +1391,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2559,
-        "latency_ms": 91.39,
+        "latency_ms": 101.47,
         "correct": false
       },
       {
@@ -1400,7 +1400,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4757,
-        "latency_ms": 95.92,
+        "latency_ms": 100.97,
         "correct": false
       },
       {
@@ -1409,7 +1409,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2737,
-        "latency_ms": 100.56,
+        "latency_ms": 97.61,
         "correct": false
       },
       {
@@ -1418,7 +1418,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.2929,
-        "latency_ms": 94.13,
+        "latency_ms": 101.6,
         "correct": false
       },
       {
@@ -1427,7 +1427,7 @@
         "expected": "UTILITIES_SERVICES",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2215,
-        "latency_ms": 103.42,
+        "latency_ms": 109.68,
         "correct": false
       },
       {
@@ -1436,7 +1436,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.7522,
-        "latency_ms": 98.86,
+        "latency_ms": 105.29,
         "correct": true
       },
       {
@@ -1445,7 +1445,7 @@
         "expected": "ATM_CASH",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.2403,
-        "latency_ms": 108.79,
+        "latency_ms": 105.11,
         "correct": false
       },
       {
@@ -1454,7 +1454,7 @@
         "expected": "ATM_CASH",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.388,
-        "latency_ms": 97.1,
+        "latency_ms": 105.46,
         "correct": false
       },
       {
@@ -1463,7 +1463,7 @@
         "expected": "ATM_CASH",
         "predicted": "OTHER",
         "confidence": 0.4017,
-        "latency_ms": 98.55,
+        "latency_ms": 104.33,
         "correct": false
       },
       {
@@ -1472,7 +1472,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.6311,
-        "latency_ms": 90.46,
+        "latency_ms": 105.55,
         "correct": true
       },
       {
@@ -1481,7 +1481,7 @@
         "expected": "ATM_CASH",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5701,
-        "latency_ms": 86.69,
+        "latency_ms": 103.53,
         "correct": false
       },
       {
@@ -1490,7 +1490,7 @@
         "expected": "ATM_CASH",
         "predicted": "OTHER",
         "confidence": 0.2578,
-        "latency_ms": 100.53,
+        "latency_ms": 107.29,
         "correct": false
       },
       {
@@ -1499,7 +1499,7 @@
         "expected": "ATM_CASH",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5723,
-        "latency_ms": 89.21,
+        "latency_ms": 87.38,
         "correct": false
       },
       {
@@ -1508,7 +1508,7 @@
         "expected": "ATM_CASH",
         "predicted": "ATM_CASH",
         "confidence": 0.9691,
-        "latency_ms": 89.84,
+        "latency_ms": 90.25,
         "correct": true
       },
       {
@@ -1517,7 +1517,7 @@
         "expected": "ATM_CASH",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.6453,
-        "latency_ms": 80.8,
+        "latency_ms": 83.45,
         "correct": false
       },
       {
@@ -1526,7 +1526,7 @@
         "expected": "BANK_FEES",
         "predicted": "OTHER",
         "confidence": 0.3432,
-        "latency_ms": 89.22,
+        "latency_ms": 86.66,
         "correct": false
       },
       {
@@ -1535,7 +1535,7 @@
         "expected": "BANK_FEES",
         "predicted": "INCOME_SALARY",
         "confidence": 0.3596,
-        "latency_ms": 96.18,
+        "latency_ms": 87.03,
         "correct": false
       },
       {
@@ -1544,7 +1544,7 @@
         "expected": "BANK_FEES",
         "predicted": "ATM_CASH",
         "confidence": 0.4629,
-        "latency_ms": 88.62,
+        "latency_ms": 84.79,
         "correct": false
       },
       {
@@ -1553,7 +1553,7 @@
         "expected": "BANK_FEES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.3292,
-        "latency_ms": 90.34,
+        "latency_ms": 94.07,
         "correct": false
       },
       {
@@ -1562,7 +1562,7 @@
         "expected": "BANK_FEES",
         "predicted": "INCOME_SALARY",
         "confidence": 0.3228,
-        "latency_ms": 93.64,
+        "latency_ms": 97.48,
         "correct": false
       },
       {
@@ -1571,7 +1571,7 @@
         "expected": "BANK_FEES",
         "predicted": "BANK_FEES",
         "confidence": 0.367,
-        "latency_ms": 92.16,
+        "latency_ms": 93.9,
         "correct": true
       },
       {
@@ -1580,7 +1580,7 @@
         "expected": "BANK_FEES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.3389,
-        "latency_ms": 91.48,
+        "latency_ms": 102.35,
         "correct": false
       },
       {
@@ -1589,7 +1589,7 @@
         "expected": "BANK_FEES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.555,
-        "latency_ms": 94.22,
+        "latency_ms": 96.93,
         "correct": false
       },
       {
@@ -1598,7 +1598,7 @@
         "expected": "BANK_FEES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.548,
-        "latency_ms": 94.5,
+        "latency_ms": 102.89,
         "correct": false
       },
       {
@@ -1607,7 +1607,7 @@
         "expected": "BANK_FEES",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4053,
-        "latency_ms": 96.0,
+        "latency_ms": 83.8,
         "correct": false
       },
       {
@@ -1616,7 +1616,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "INCOME_SALARY",
         "confidence": 0.3651,
-        "latency_ms": 104.15,
+        "latency_ms": 88.49,
         "correct": false
       },
       {
@@ -1625,7 +1625,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4509,
-        "latency_ms": 108.2,
+        "latency_ms": 86.84,
         "correct": false
       },
       {
@@ -1634,7 +1634,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.2743,
-        "latency_ms": 96.35,
+        "latency_ms": 84.34,
         "correct": false
       },
       {
@@ -1643,7 +1643,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.7751,
-        "latency_ms": 95.9,
+        "latency_ms": 85.84,
         "correct": false
       },
       {
@@ -1652,7 +1652,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2632,
-        "latency_ms": 93.72,
+        "latency_ms": 86.74,
         "correct": false
       },
       {
@@ -1661,7 +1661,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.5409,
-        "latency_ms": 83.85,
+        "latency_ms": 82.55,
         "correct": false
       },
       {
@@ -1670,7 +1670,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.7627,
-        "latency_ms": 86.54,
+        "latency_ms": 83.71,
         "correct": false
       },
       {
@@ -1679,7 +1679,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4287,
-        "latency_ms": 87.96,
+        "latency_ms": 87.8,
         "correct": false
       },
       {
@@ -1688,7 +1688,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "OTHER",
         "confidence": 0.2482,
-        "latency_ms": 84.66,
+        "latency_ms": 86.13,
         "correct": false
       },
       {
@@ -1697,7 +1697,7 @@
         "expected": "INVESTMENT_DIVIDEND",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.3628,
-        "latency_ms": 89.91,
+        "latency_ms": 88.17,
         "correct": false
       },
       {
@@ -1706,7 +1706,7 @@
         "expected": "OTHER",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.7678,
-        "latency_ms": 93.4,
+        "latency_ms": 95.99,
         "correct": false
       },
       {
@@ -1715,7 +1715,7 @@
         "expected": "OTHER",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.2951,
-        "latency_ms": 97.18,
+        "latency_ms": 103.82,
         "correct": false
       },
       {
@@ -1724,7 +1724,7 @@
         "expected": "OTHER",
         "predicted": "OTHER",
         "confidence": 0.2745,
-        "latency_ms": 87.21,
+        "latency_ms": 96.03,
         "correct": true
       },
       {
@@ -1733,7 +1733,7 @@
         "expected": "OTHER",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2915,
-        "latency_ms": 94.85,
+        "latency_ms": 98.54,
         "correct": false
       },
       {
@@ -1742,7 +1742,7 @@
         "expected": "OTHER",
         "predicted": "INCOME_SALARY",
         "confidence": 0.6777,
-        "latency_ms": 97.98,
+        "latency_ms": 100.49,
         "correct": false
       },
       {
@@ -1751,7 +1751,7 @@
         "expected": "OTHER",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4185,
-        "latency_ms": 96.35,
+        "latency_ms": 97.32,
         "correct": false
       },
       {
@@ -1760,7 +1760,7 @@
         "expected": "OTHER",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2579,
-        "latency_ms": 90.96,
+        "latency_ms": 98.49,
         "correct": false
       },
       {
@@ -1769,7 +1769,7 @@
         "expected": "OTHER",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.4704,
-        "latency_ms": 97.09,
+        "latency_ms": 132.84,
         "correct": false
       },
       {
@@ -1778,7 +1778,7 @@
         "expected": "OTHER",
         "predicted": "TRANSFER_P2P",
         "confidence": 0.3653,
-        "latency_ms": 92.41,
+        "latency_ms": 96.69,
         "correct": false
       },
       {
@@ -1787,7 +1787,7 @@
         "expected": "OTHER",
         "predicted": "INCOME_SALARY",
         "confidence": 0.2757,
-        "latency_ms": 93.18,
+        "latency_ms": 102.57,
         "correct": false
       }
     ]
@@ -1797,8 +1797,8 @@
     "accuracy_transformers": 41.25,
     "macro_f1_scikit_learn": 84.76,
     "macro_f1_transformers": 37.33,
-    "avg_latency_ms_scikit_learn": 0.32,
-    "avg_latency_ms_transformers": 95.59,
-    "latency_ratio": 298.7
+    "avg_latency_ms_scikit_learn": 0.29,
+    "avg_latency_ms_transformers": 97.41,
+    "latency_ratio": 335.9
   }
 }
