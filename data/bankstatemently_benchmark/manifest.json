@@ -1,0 +1,116 @@
+{
+  "datasetVersion": "2.4",
+  "generatedAt": "2026-08-25T16:19:40.783Z",
+  "statementCount": 15,
+  "releasedCount": 5,
+  "difficulties": {
+    "basic": 5,
+    "intermediate": 5,
+    "advanced": 5
+  },
+  "challenges": [
+    "balance-carry-forward-rows",
+    "balance-validation",
+    "bilingual-headers",
+    "buddhist-era-dates",
+    "charges-shown-as-negative",
+    "credit-debit-columns",
+    "currency-symbol-amounts",
+    "currency-symbol-header-only",
+    "date-carry-forward",
+    "date-format-variations",
+    "date-time-dual-column",
+    "dual-balance-timeline",
+    "dual-currency-display",
+    "end-of-day-balance",
+    "fee-and-interest-sections",
+    "fee-column",
+    "header-footer-noise",
+    "mixed-locale-formatting",
+    "multi-currency",
+    "multi-line-descriptions",
+    "multiple-accounts-multiple-tables",
+    "multiple-accounts-single-table",
+    "multiple-tables",
+    "no-table-boundaries",
+    "non-standard-page-size",
+    "partial-year-dates",
+    "payment-method-column",
+    "posting-date-selection",
+    "scanned-pdf-text",
+    "separate-counterparty-column",
+    "split-date-columns-merged",
+    "split-embedded-date-column",
+    "trailing-sign-amounts",
+    "transaction-continuation",
+    "two-digit-year-dates",
+    "zero-value-informational-rows"
+  ],
+  "statements": {
+    "bsb-001": {
+      "difficulty": "basic",
+      "released": true,
+      "pdfChecksum": "d3d5071b90a33272"
+    },
+    "bsb-002": {
+      "difficulty": "basic",
+      "released": true,
+      "pdfChecksum": "3700a073ac126217"
+    },
+    "bsb-003": {
+      "difficulty": "basic",
+      "released": true,
+      "pdfChecksum": "4945bcda107e6d78"
+    },
+    "bsb-004": {
+      "difficulty": "basic",
+      "released": true,
+      "pdfChecksum": "67a5b862696fc06e"
+    },
+    "bsb-005": {
+      "difficulty": "basic",
+      "released": true,
+      "pdfChecksum": "a5cc2a7d210bc657"
+    },
+    "bsb-006": {
+      "difficulty": "intermediate",
+      "released": false
+    },
+    "bsb-007": {
+      "difficulty": "intermediate",
+      "released": false
+    },
+    "bsb-008": {
+      "difficulty": "intermediate",
+      "released": false
+    },
+    "bsb-009": {
+      "difficulty": "intermediate",
+      "released": false
+    },
+    "bsb-010": {
+      "difficulty": "intermediate",
+      "released": false
+    },
+    "bsb-011": {
+      "difficulty": "advanced",
+      "released": false
+    },
+    "bsb-012": {
+      "difficulty": "advanced",
+      "released": false
+    },
+    "bsb-013": {
+      "difficulty": "advanced",
+      "released": false
+    },
+    "bsb-014": {
+      "difficulty": "advanced",
+      "released": false
+    },
+    "bsb-015": {
+      "difficulty": "advanced",
+      "released": false
+    }
+  }
+}
