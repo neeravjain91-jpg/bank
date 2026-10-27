@@ -131,7 +131,10 @@ class LineClassifier:
 
     def train_default_model(self):
         """Train classifier on representative synthetic banking document lines."""
-        os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
+        try:
+            os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
+        except Exception:
+            pass
         
         # Synthetic representative training lines
         samples = [
@@ -207,7 +210,10 @@ class LineClassifier:
             ("classifier", RandomForestClassifier(n_estimators=50, random_state=42, max_depth=8))
         ])
         self.pipeline.fit(X_feats, y_labels)
-        joblib.dump(self.pipeline, self.model_path)
+        try:
+            joblib.dump(self.pipeline, self.model_path)
+        except Exception:
+            pass
 
     def predict_role(
         self,

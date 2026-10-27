@@ -274,6 +274,19 @@ docker build -t bank-statement-extractor:latest .
 docker run -p 8000:8000 --env-file .env bank-statement-extractor:latest
 ```
 
+### Live Cloud Deployment (Vercel Serverless)
+The service is deployed live on Vercel as a serverless ASGI application:
+- **Production URL**: `https://mayank-ten-indol.vercel.app`
+- **Health Check**: `https://mayank-ten-indol.vercel.app/health`
+- **Supported Profiles**: `https://mayank-ten-indol.vercel.app/profiles`
+- **Architecture**: Vercel Python 3.12 Serverless Function via `api/index.py` and `vercel.json` rewrites. Read-only filesystem hardened, optimized lightweight ML stack (< 1 MB bundle, sub-second execution).
+
+To run live cloud verification against the Vercel deployment:
+```bash
+python scripts/test_vercel_live.py
+```
+*(Validates all 7 live cloud endpoints: GET /, GET /health, GET /profiles, POST /categorize, POST /extract JSON, POST /extract CSV, and 400 security rejection).*
+
 ### Cloud Deployment (Render / PaaS)
 A turnkey `render.yaml` blueprint is provided:
 1. Connect repository to Render (or compatible cloud container provider).

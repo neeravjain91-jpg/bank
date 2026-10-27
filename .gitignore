@@ -49,3 +49,4 @@ data/bankstatemently_benchmark/datasets/advanced/
 *.safetensors
 data/models_cache/
 dist/
+.vercel

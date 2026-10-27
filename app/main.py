@@ -18,7 +18,8 @@ app = FastAPI(
     ),
     version="1.0.0",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    redirect_slashes=False
 )
 
 # Enable CORS for banking analytics frontend clients
@@ -35,11 +36,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include API endpoints
+# Include API endpoints at root and subpath prefixes for flexible deployment routing
 app.include_router(api_router)
+app.include_router(api_router, prefix="/api")
+app.include_router(api_router, prefix="/api/index")
 
 
 @app.get("/", tags=["System"])
+@app.get("/api", tags=["System"])
+@app.get("/api/", tags=["System"])
+@app.get("/api/index", tags=["System"])
+@app.get("/api/index/", tags=["System"])
 def root():
     return {
         "message": "Bank Statement Table Extraction Service is Running",

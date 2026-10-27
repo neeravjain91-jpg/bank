@@ -1,0 +1,12 @@
+.git
+.github
+.pytest_cache
+__pycache__
+*.pyc
+tests/
+dist/
+data/models_cache/
+data/bankstatemently_benchmark/datasets/intermediate/
+data/bankstatemently_benchmark/datasets/advanced/
+Dockerfile
+render.yaml

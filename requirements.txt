@@ -7,10 +7,8 @@ python-multipart>=0.0.9
 # Document Processing & PDF Text Extraction
 pymupdf>=1.24.0
 
-# Machine Learning & NLP
+# Machine Learning & NLP (scikit-learn production engine)
 scikit-learn>=1.4.0
-transformers>=4.38.0
-torch>=2.2.0
 
 # Data Manipulation & Numerical Operations
 pandas>=2.2.0

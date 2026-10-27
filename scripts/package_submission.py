@@ -11,6 +11,7 @@ WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DIST_DIR = os.path.join(WORKSPACE_DIR, "dist", "final_submission")
 
 INCLUDE_DIRS = [
+    "api",
     "app",
     "docs",
     "scripts",
@@ -27,17 +28,21 @@ INCLUDE_FILES = [
     ".dockerignore",
     ".env.example",
     ".gitignore",
+    ".vercelignore",
     "Dockerfile",
     "pytest.ini",
     "README.md",
     "render.yaml",
-    "requirements.txt"
+    "requirements.txt",
+    "requirements-full.txt",
+    "vercel.json"
 ]
 
 EXCLUDE_DIR_NAMES = {
     "__pycache__",
     ".pytest_cache",
     ".git",
+    ".vercel",
     "models_cache",
     "venv",
     ".venv"

@@ -1,0 +1,6 @@
+# Core Serverless & Production Stack
+-r requirements.txt
+
+# Optional Heavy NLP Transformers & PyTorch (for local workstation zero-shot evaluation)
+transformers>=4.38.0
+torch>=2.2.0

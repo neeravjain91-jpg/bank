@@ -251,7 +251,10 @@ class NLPCategorizer:
 
     def train_default_model(self):
         """Train scikit-learn NLP text classification model."""
-        os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
+        try:
+            os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
+        except Exception:
+            pass
         texts = [t[0] for t in TRAINING_DATA]
         labels = [t[1] for t in TRAINING_DATA]
 
@@ -260,7 +263,10 @@ class NLPCategorizer:
             ("clf", LogisticRegression(C=2.0, class_weight="balanced", max_iter=300, random_state=42))
         ])
         self.pipeline.fit(texts, labels)
-        joblib.dump(self.pipeline, self.model_path)
+        try:
+            joblib.dump(self.pipeline, self.model_path)
+        except Exception:
+            pass
 
     def load_transformers_pipeline(self, model_name: Optional[str] = None):
         """
