@@ -8,9 +8,10 @@ import json
 import requests
 
 TARGET_URLS = [
-    ("Target Deployment URL (Latest)", "https://mayank-f8swrf3gb-neeravjain91-6032s-projects.vercel.app"),
-    ("Production Alias URL", "https://mayank-ten-indol.vercel.app"),
-    ("User Mentioned Deployment URL", "https://mayank-apncvmung-neeravjain91-6032s-projects.vercel.app")
+    ("Canonical Production Alias URL", "https://mayank-ten-indol.vercel.app"),
+    ("Active Production Deployment URL (dpl_DJLHHEAeh1Rxbz2h8QYmXcP2UMoV)", "https://mayank-og62ho5yi-neeravjain91-6032s-projects.vercel.app"),
+    ("Previous Deployment URL (dpl_6GKz6HD7X3T1Cab9eqN1GRdLutLQ)", "https://mayank-7apj9o0wa-neeravjain91-6032s-projects.vercel.app"),
+    ("Earlier Deployment URL (dpl_H7jpDCJGp9Tp9D3PpstfEvhQ3P4c)", "https://mayank-f8swrf3gb-neeravjain91-6032s-projects.vercel.app")
 ]
 
 BYPASS_TOKEN = os.getenv("VERCEL_PROTECTION_BYPASS", "").strip()

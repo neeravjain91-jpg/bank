@@ -185,7 +185,7 @@ def create_full_report():
     meta_tbl = doc.add_table(rows=8, cols=2)
     meta_tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
-        ("Candidate / Author:", "[Student Name: Mayank]"),
+        ("Candidate / Author:", "Neerav Jain"),
         ("Roll Number / Registration ID:", "[HCL-4YR-XXXX]"),
         ("Degree & Program:", "Bachelor of Technology in Computer Science & Engineering"),
         ("Academic Department:", "[Department of Computer Science & Engineering]"),
@@ -523,15 +523,19 @@ def create_full_report():
     bullet("Credit Amount Accuracy: 24 / 24 (100.0%)")
     bullet("Balance Accuracy: 69 / 69 (100.0% where line balances exist; statements bsb-002 and bsb-003 do not report line balances)")
 
+    h2("22.2 Methodological Scope & Development Suite Overlap")
+    p("Methodological Disclosure on Development Suite Overlap: The 6 evaluated statements (bsb-001 through bsb-005 from the Bankstatemently suite plus the synthetic Bank Muscat sample) served as the primary development and regression benchmark during pipeline engineering. Visual column boundaries, token grouping thresholds, and line-role feature representations were iteratively tuned against these exact documents to eliminate baseline heuristic failure modes (including continuation line drops on bsb-003 and bsb-005).")
+    p("Non-Blind Calibration Distinction: Consequently, this evaluation cannot be characterized as an independent double-blind evaluation on unseen documents. The 106/106 (100.0%) result confirms zero-defect calibration on this curated development suite and must not be cited as evidence of universal, guaranteed 100% real-world accuracy across un-profiled financial institutions.")
+
     # ==================== 23. PRODUCTION CLOUD DEPLOYMENT ====================
     h1("23. Production Cloud Deployment & Live Verification")
     p("The application is deployed live to Vercel Serverless Functions using the @vercel/python runtime (Python 3.12).")
     h2("23.1 Deployment Infrastructure Details")
     bullet("Canonical Production URL: https://mayank-ten-indol.vercel.app")
     bullet("Interactive Swagger UI: https://mayank-ten-indol.vercel.app/docs")
-    bullet("Deployment ID: dpl_6GKz6HD7X3T1Cab9eqN1GRdLutLQ")
-    bullet("Deployment Commit: 0d41bbe (incorporating routing fix 9302034 and verification scripts 9280d36)")
-    bullet("Serverless Bundle Size: 65.89 MB (under 250 MB Vercel limit)")
+    bullet("Active Deployment ID: dpl_DJLHHEAeh1Rxbz2h8QYmXcP2UMoV")
+    bullet("Deployment Commit: 6ca0030179dc2ca224a24e0a8140ce6315399c2a (verified clean main branch)")
+    bullet("Serverless Bundle Size: 65.97 MB (under 250 MB Vercel limit)")
     bullet("Cold Start Install Time: 3.67 seconds")
 
     h2("23.2 Live Endpoint Verification Results (7/7 Passed)")
@@ -547,7 +551,7 @@ def create_full_report():
     # ==================== 24. LIMITATIONS & KNOWN ISSUES ====================
     h1("24. System Limitations & Risk Analysis")
     bullet("Scanned PDF Limitation: The extraction pipeline requires vector digital text layers. Scanned paper statements without text layers cannot be extracted without an upstream OCR tool (e.g. Tesseract or AWS Textract).", "1. Optical OCR Absence: ")
-    bullet("The 106-transaction evaluation represents performance on the development set and synthetic Bank Muscat sample. While it proves algorithmic correctness on supported layout styles, it should not be extrapolated as proof of 100% generalization across un-profiled banks.", "2. Generalization Scope: ")
+    bullet("The 106-transaction evaluation represents verified performance on the development and benchmark calibration suite. Because model features and layout heuristics were tuned against these exact documents to resolve continuation line splitting and overlay disclaimers, these results do not constitute an independent blind test. Performance on genuinely unseen statements from non-profiled institutions will depend on profile configuration or future adaptive vision models.", "2. Benchmark Overlap & Generalization Boundary: ")
     bullet("Due to banking confidentiality laws, proprietary customer statements from Bank Muscat were unavailable. Commercial enterprise deployment will require authorization and on-premise validation with live customer data.", "3. Synthetic Validation Data: ")
 
     # ==================== 25. FUTURE ENHANCEMENTS ====================

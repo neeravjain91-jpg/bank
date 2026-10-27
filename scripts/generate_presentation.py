@@ -106,7 +106,7 @@ p3.font.color.rgb = COLOR_MUTED
 p3.space_after = Pt(36)
 
 p4 = tf.add_paragraph()
-p4.text = "Student / Candidate: [Student Name: Mayank]  |  Roll Number: [HCL-4YR-XXXX]"
+p4.text = "Student / Candidate: Neerav Jain  |  Roll Number: [HCL-4YR-XXXX]"
 p4.font.size = Pt(12)
 p4.font.bold = True
 p4.font.color.rgb = COLOR_WHITE
@@ -315,7 +315,7 @@ add_card(s11, 0.8, 1.8, 5.6, 5.0, "FastAPI REST Controller Architecture", [
     "Dual Output Modality: Content negotiation supports application/json or text/csv download."
 ])
 add_card(s11, 6.8, 1.8, 5.6, 5.0, "Vercel Serverless Cloud Infrastructure", [
-    "Production URL: https://mayank-ten-indol.vercel.app (Deployment ID: dpl_6GKz6HD7X3T1Cab9eqN1GRdLutLQ).",
+    "Production URL: https://mayank-ten-indol.vercel.app (Deployment ID: dpl_DJLHHEAeh1Rxbz2h8QYmXcP2UMoV).",
     "ASGI Rewrite Middleware: PrefixRewriteMiddleware transparently handles /api/index routing without broken links.",
     "Read-Only Filesystem Hardening: In-memory pipeline initialization prevents serverless OS write errors.",
     "Cold Start Optimization: Installs and initializes in under 3.7 seconds; runtime latency ~50ms."
@@ -332,7 +332,7 @@ add_card(s12, 0.8, 1.8, 5.6, 5.0, "Extraction Benchmark (106 Transactions)", [
     "Silk Road Banking (bsb-004): 25 / 25 exact matches (100.0% F1, PASS).",
     "Harbour Bank (bsb-005): 25 / 25 exact matches (100.0% F1, PASS).",
     "Bank Muscat (Synthetic): 7 / 7 exact matches (100.0% F1, PASS).",
-    "Aggregate ML Result: 106 / 106 Extracted (100.0% Precision, 100.0% Recall, 100.0% Exact Match Acc, 6/6 Reconciled)."
+    "Aggregate ML Result: 106 / 106 Extracted (100.0% Exact Match on Curated Development Suite; Not Blind Generalization)."
 ], border_color=COLOR_GREEN)
 add_card(s12, 6.8, 1.8, 5.6, 5.0, "Automated Test Suite (pytest -v)", [
     "Total Unit & Integration Tests: 41 automated tests.",
@@ -369,7 +369,7 @@ set_slide_bg(s14)
 add_header(s14, "Engineering Limitations & Future Enhancements")
 add_card(s14, 0.8, 1.8, 5.6, 5.0, "Current System Limitations", [
     "Vector-Only Extraction: Designed for digital native PDFs; scanned image-only PDFs require upstream OCR engine.",
-    "Development Benchmark Scope: 106-transaction benchmark demonstrates development set fit, not infinite enterprise generalization.",
+    "Development Suite Overlap: Feature heuristics calibrated on 6 benchmark statements; does not constitute a double-blind trial. Enterprise generalization to un-profiled banks requires active profile registration.",
     "Synthetic Bank Muscat Statement: Evaluated on synthetic statements due to customer banking privacy laws; commercial deployment requires authorized testing on live bank records.",
     "Heuristic Fallback: Documents with severely degraded coordinate geometry fall back to rule-based bounding boxes."
 ])
