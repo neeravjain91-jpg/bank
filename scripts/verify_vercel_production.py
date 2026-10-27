@@ -8,9 +8,9 @@ import json
 import requests
 
 TARGET_URLS = [
-    ("Target Deployment URL", "https://mayank-quqcfvhnl-neeravjain91-6032s-projects.vercel.app"),
+    ("Target Deployment URL (Latest)", "https://mayank-f8swrf3gb-neeravjain91-6032s-projects.vercel.app"),
     ("Production Alias URL", "https://mayank-ten-indol.vercel.app"),
-    ("User Mentioned URL", "https://mayank-apncvmung-neeravjain91-6032s-projects.vercel.app")
+    ("User Mentioned Deployment URL", "https://mayank-apncvmung-neeravjain91-6032s-projects.vercel.app")
 ]
 
 BYPASS_TOKEN = "zrL5HkJTzzMvMIsGsiWr2hzw5bhrrzDv"
@@ -165,5 +165,5 @@ def run_checks(base_name, base_url):
 
 
 if __name__ == "__main__":
-    for name, url in TARGET_URLS[:2]:
+    for name, url in TARGET_URLS:
         run_checks(name, url)
