@@ -533,9 +533,9 @@ def create_full_report():
     h2("23.1 Deployment Infrastructure Details")
     bullet("Canonical Production URL: https://mayank-ten-indol.vercel.app")
     bullet("Interactive Swagger UI: https://mayank-ten-indol.vercel.app/docs")
-    bullet("Active Deployment ID: dpl_DJLHHEAeh1Rxbz2h8QYmXcP2UMoV")
-    bullet("Deployment Commit: 6ca0030179dc2ca224a24e0a8140ce6315399c2a (verified clean main branch)")
-    bullet("Serverless Bundle Size: 65.97 MB (under 250 MB Vercel limit)")
+    bullet("Active Deployment ID: dpl_DXRE6of8njFurYjDmevEvv4xq2hH")
+    bullet("Deployment Commit: 416e322 (verified clean main branch)")
+    bullet("Serverless Bundle Size: 66.01 MB (under 250 MB Vercel limit)")
     bullet("Cold Start Install Time: 3.67 seconds")
 
     h2("23.2 Live Endpoint Verification Results (7/7 Passed)")
