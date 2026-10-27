@@ -7,8 +7,8 @@ import json
 import requests
 
 BASE_URL = "https://mayank-ten-indol.vercel.app"
-BYPASS_TOKEN = "zrL5HkJTzzMvMIsGsiWr2hzw5bhrrzDv"
-HEADERS = {"x-vercel-protection-bypass": BYPASS_TOKEN}
+BYPASS_TOKEN = os.getenv("VERCEL_PROTECTION_BYPASS", "").strip()
+HEADERS = {"x-vercel-protection-bypass": BYPASS_TOKEN} if BYPASS_TOKEN else {}
 
 def test_root():
     print("\n--- 1. Testing GET / ---")

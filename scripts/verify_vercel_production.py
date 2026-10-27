@@ -13,8 +13,8 @@ TARGET_URLS = [
     ("User Mentioned Deployment URL", "https://mayank-apncvmung-neeravjain91-6032s-projects.vercel.app")
 ]
 
-BYPASS_TOKEN = "zrL5HkJTzzMvMIsGsiWr2hzw5bhrrzDv"
-BASE_HEADERS = {"x-vercel-protection-bypass": BYPASS_TOKEN}
+BYPASS_TOKEN = os.getenv("VERCEL_PROTECTION_BYPASS", "").strip()
+BASE_HEADERS = {"x-vercel-protection-bypass": BYPASS_TOKEN} if BYPASS_TOKEN else {}
 
 
 def run_checks(base_name, base_url):
