@@ -1,0 +1,39 @@
+# Git
+.git/
+.gitignore
+
+# Python virtual environments & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+
+# Build and distributions
+build/
+dist/
+*.egg-info/
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Large model binaries and downloaded caches
+*.safetensors
+*.pt
+*.bin
+*.parquet
+data/models_cache/*
+!data/models_cache/.gitkeep
+data/raw/*
+!data/raw/bank_muscat_sample.pdf

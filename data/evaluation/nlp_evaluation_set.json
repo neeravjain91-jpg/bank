@@ -1,0 +1,406 @@
+{
+  "dataset_name": "Synthetic Banking Narrative Independent Evaluation Suite",
+  "total_examples": 80,
+  "examples": [
+    {
+      "id": "sal_01",
+      "description": "SALARY CREDIT - SCHLUMBERGER OMAN W.L.L.",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_02",
+      "description": "MONTHLY PAYROLL DIRECT DEP HEALTH SERVICES EXEC",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_03",
+      "description": "PAYROLL TRANSFER DEFENCE FORCE HO SALARY CR",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_04",
+      "description": "WAGE DEPOSIT FORTUNE TECH CORP REF W202501",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_05",
+      "description": "SALARY PAYMENT MINISTRY OF HIGHER EDUCATION",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_06",
+      "description": "CREDIT DIRECT DEPOSIT ST JUDE HOSPITAL PAYROLL",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_07",
+      "description": "FAST INWARD SALARY TRANSFER APEX SHIPPING PTE",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_08",
+      "description": "CONSULTING REMUNERATION ADVISORY FEE WAGE",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_09",
+      "description": "BI-WEEKLY STIPEND UNIVERSITY RESEARCH SALARY",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "sal_10",
+      "description": "SALARY DISBURSEMENT CIVIL SERVICE COMMISSION",
+      "category": "INCOME_SALARY"
+    },
+    {
+      "id": "p2p_01",
+      "description": "PAYNOW TO +6581234567 LUNCH SHARING REF 44921",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_02",
+      "description": "FPS TRANSFER TO: CHAN TAI MAN MOBILE 98765432",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_03",
+      "description": "FUNDS TRF TO FATIMA AL-HINAI GIFT REF 88129",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_04",
+      "description": "OVERSEAS REMITTANCE TO KHALID IBAN OM210001928374",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_05",
+      "description": "VENMO CASHOUT TO CHECKING JANE DOE P2P",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_06",
+      "description": "SEPA CREDIT TRF TO MARCO ROSSI IT60X0542811101",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_07",
+      "description": "INTERNET BANKING TRANSFER TO AHMED SISTER RENT",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_08",
+      "description": "INSTANT MONEY TRANSFER VIA ZELLE REF 990142",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_09",
+      "description": "PAYNOW TO UEN 201827419K PERSONAL TUTOR PAYMENT",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "p2p_10",
+      "description": "DOMESTIC WIRE TRANSFER TO MOHAMMED SAID REF 10293",
+      "category": "TRANSFER_P2P"
+    },
+    {
+      "id": "pos_01",
+      "description": "POS PURCHASE AL MEERA SUPERMARKET AL AZAIBAN",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_02",
+      "description": "AMAZON RETAIL MARKETPLACE ORDER 112-9921448",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_03",
+      "description": "POS CONTACTLESS PAYMENT COSTA COFFEE SEEB",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_04",
+      "description": "SHELL SERVICE STATION PETROL FUEL FILL-UP",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_05",
+      "description": "IKEA FURNITURE STORE RETAIL CHECKOUT REF 5581",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_06",
+      "description": "TESCO EXTRA GROCERY SUPERSTORE STORE #2214",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_07",
+      "description": "APPLE STORE REGENT ST HARDWARE PURCHASE",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_08",
+      "description": "PHARMACY MUSCAT DRUG STORE MEDICAL RECEIPT",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_09",
+      "description": "BOOKSTORE BORDERS RETAIL MALL PURCHASE POS",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "pos_10",
+      "description": "SHANGRI-LA RESORT DINING RESTAURANT INVOICE",
+      "category": "MERCHANT_POS"
+    },
+    {
+      "id": "utl_01",
+      "description": "NAMA ELECTRICITY BILL PAYMENT MUSCAT GOVERNORATE",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_02",
+      "description": "MAZOON ELECTRICITY COMPANY AUTO-DEBIT UTILITY",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_03",
+      "description": "PUBLIC AUTHORITY FOR WATER DIAM WATER BILL",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_04",
+      "description": "VODAFONE OMAN POSTPAID MOBILE BILL PYMT 8821",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_05",
+      "description": "SINGTEL POSTPAID MOBILE & FIBRE BROADBAND BILL",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_06",
+      "description": "CON EDISON RESIDENTIAL POWER & GAS UTILITIES",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_07",
+      "description": "BRITISH GAS MONTHLY ENERGY DIRECT DEBIT",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_08",
+      "description": "CITY MUNICIPALITY TRASH SEWER SERVICE UTILITY",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_09",
+      "description": "AWASR FIBRE INTERNET SERVICE SUBSCRIPTION",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "utl_10",
+      "description": "ENEL ENERGIA BOLLETTA LUCE E GAS UTILITY",
+      "category": "UTILITIES_SERVICES"
+    },
+    {
+      "id": "atm_01",
+      "description": "ATM CASH WITHDRAWAL AL KHOUD BRANCH MACHINE 02",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_02",
+      "description": "OFF-US ATM W/D NATIONAL BANK OF OMAN ATM 4419",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_03",
+      "description": "DBS ATM CASH DISPENSE ORCHARD ROAD SINGAPORE",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_04",
+      "description": "CHASE BANK ATM CASH WITHDRAWAL 5TH AVE NYC",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_05",
+      "description": "HSBC ATM WITHDRAWAL CASH CENTRAL HK ISLAND",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_06",
+      "description": "BARCLAYS ATM CASH WITHDRAWAL OXFORD STREET",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_07",
+      "description": "ABN AMRO GELDAUTOMAAT PIN CONTANT GELD",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_08",
+      "description": "ATM CASH MACHINE TRANSACTION AIRPORT TERMINAL 1",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_09",
+      "description": "CASH WITHDRAWAL CIRRUS NETWORK ATM 99812",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "atm_10",
+      "description": "TELLER CASH WITHDRAWAL AT BRANCH COUNTER",
+      "category": "ATM_CASH"
+    },
+    {
+      "id": "fee_01",
+      "description": "MONTHLY LEDGER FEE NON-MAINTENANCE MIN BALANCE",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_02",
+      "description": "OVERDRAFT FACILITY USAGE FEE CHARGE 2025",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_03",
+      "description": "INTERNATIONAL ATM CASH WITHDRAWAL CHARGE FEE",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_04",
+      "description": "TELEGRAPHIC TRANSFER OUTWARD SWIFT COMMISSION",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_05",
+      "description": "CHEQUE BOOK ISSUANCE FEE 25 LEAVES CHARGED",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_06",
+      "description": "DORMANT ACCOUNT REACTIVATION PENALTY FEE",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_07",
+      "description": "ANNUAL DEBIT CARD RENEWAL ADMINISTRATION CHG",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_08",
+      "description": "UNPAID DIRECT DEBIT REVERSAL SERVICE CHARGE",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_09",
+      "description": "CURRENCY CONVERSION COMMISSION FX BANK CHARGE",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "fee_10",
+      "description": "PAPER STATEMENT MAILING POSTAGE FEE ACCOUNT",
+      "category": "BANK_FEES"
+    },
+    {
+      "id": "inv_01",
+      "description": "CASH DIVIDEND BANK DHOFAR COMMON SHARES 2024",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_02",
+      "description": "DIVIDEND DISTRIBUTION VANGUARD S&P 500 ETF",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_03",
+      "description": "MSX OMAN TELECOM INTERIM DIVIDEND DISTRIBUTION",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_04",
+      "description": "COUPON PAYMENT OMAN GOVERNMENT SOVEREIGN SUKUK",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_05",
+      "description": "QUARTERLY DIVIDEND APPLE INC RECORD DATE 2025",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_06",
+      "description": "TREASURY BOND INTEREST PAYMENT YIELD POSTED",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_07",
+      "description": "MUTUAL FUND CAPITAL GAIN DISTRIBUTION BLACKROCK",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_08",
+      "description": "REAL ESTATE INVESTMENT TRUST REIT DIVIDEND CR",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_09",
+      "description": "SHAREHOLDERS DIVIDEND CREDIT ARAMCO ENERGY",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "inv_10",
+      "description": "FIXED DEPOSIT MATURITY INTEREST ACCRUAL CREDIT",
+      "category": "INVESTMENT_DIVIDEND"
+    },
+    {
+      "id": "oth_01",
+      "description": "ROUND-UP AUTO SAVINGS SWEEP TRANSFER DEBIT",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_02",
+      "description": "INTERNAL GL CLEARING OFFSET ACCOUNT 009214",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_03",
+      "description": "BALANCE SHEET ADJUSTMENT SYSTEM ENTRY VERIFY",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_04",
+      "description": "ESCROW RETENTION RELEASE PHASE 2 CONTRACT",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_05",
+      "description": "CASHBACK REWARDS REBATE POSTING CREDIT 2025",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_06",
+      "description": "COLLATERAL HOLD RELEASE LIEN CANCELLATION",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_07",
+      "description": "SUSPENSE ACCOUNT REVERSAL TRANSIT BATCH 44",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_08",
+      "description": "SECURITY DEPOSIT RETURN APARTMENT LEASE 302",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_09",
+      "description": "ROUNDING FRACTIONAL SETTLEMENT CORRECTION",
+      "category": "OTHER"
+    },
+    {
+      "id": "oth_10",
+      "description": "UNSPECIFIED GENERAL JOURNAL POSTING ADJUSTMENT",
+      "category": "OTHER"
+    }
+  ]
+}

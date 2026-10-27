@@ -1,0 +1,649 @@
+{
+  "metadata": {
+    "evaluation_timestamp": "2026-10-27 07:49:35 UTC",
+    "matching_criteria": {
+      "description": "1-to-1 matching requiring exact amount (tolerance 0.005), exact direction, and date match or description similarity >= 0.70",
+      "exact_transaction_match_definition": "Simultaneous correctness of Date, Description (sim >= 0.70), Amount/Direction, and Running Balance (where present)"
+    },
+    "evaluation_scope_disclosure": {
+      "benchmark_statements_bsb001_to_bsb005": "Development set / benchmark sample evaluation. ML line classifier training set contains exemplar patterns from these documents. Not out-of-distribution holdout evaluation.",
+      "bank_muscat_statement": "Synthetic sample validation generated from Bank Muscat specifications. Not an authorized production customer statement."
+    }
+  },
+  "aggregate": {
+    "total_statements": 6,
+    "total_expected_transactions": 106,
+    "baseline": {
+      "extracted": 103,
+      "true_positives": 103,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "exact_matches": 102,
+      "micro_precision": 100.0,
+      "micro_recall": 97.17,
+      "micro_f1": 98.56,
+      "field_accuracy": {
+        "date": {
+          "correct": 103,
+          "evaluated": 103,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 102,
+          "evaluated": 103,
+          "pct": 99.03
+        },
+        "debit": {
+          "correct": 80,
+          "evaluated": 80,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 23,
+          "evaluated": 23,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 68,
+          "evaluated": 68,
+          "pct": 100.0
+        }
+      }
+    },
+    "ml_enhanced": {
+      "extracted": 106,
+      "true_positives": 106,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "exact_matches": 106,
+      "micro_precision": 100.0,
+      "micro_recall": 100.0,
+      "micro_f1": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 106,
+          "evaluated": 106,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 106,
+          "evaluated": 106,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 82,
+          "evaluated": 82,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 24,
+          "evaluated": 24,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 69,
+          "evaluated": 69,
+          "pct": 100.0
+        }
+      }
+    }
+  },
+  "baseline_results": [
+    {
+      "expected_txns": 12,
+      "extracted_txns": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 12,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 12,
+          "evaluated": 12,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 12,
+          "evaluated": 12,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 9,
+          "evaluated": 9,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 3,
+          "evaluated": 3,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 12,
+          "evaluated": 12,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bsb-001",
+      "name": "Straits Capital (SG)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 52.0,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 15,
+      "extracted_txns": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 14,
+      "exact_accuracy": 93.33,
+      "field_accuracy": {
+        "date": {
+          "correct": 15,
+          "evaluated": 15,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 14,
+          "evaluated": 15,
+          "pct": 93.33
+        },
+        "debit": {
+          "correct": 14,
+          "evaluated": 14,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 1,
+          "evaluated": 1,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 0,
+          "evaluated": 0,
+          "pct": null,
+          "available": false
+        }
+      },
+      "doc_id": "bsb-002",
+      "name": "Liberty National (US)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 70.8,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 22,
+      "extracted_txns": 20,
+      "true_positives": 20,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "precision": 100.0,
+      "recall": 90.91,
+      "f1": 95.24,
+      "exact_matches": 20,
+      "exact_accuracy": 90.91,
+      "field_accuracy": {
+        "date": {
+          "correct": 20,
+          "evaluated": 20,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 20,
+          "evaluated": 20,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 15,
+          "evaluated": 15,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 5,
+          "evaluated": 5,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 0,
+          "evaluated": 0,
+          "pct": null,
+          "available": false
+        }
+      },
+      "doc_id": "bsb-003",
+      "name": "Continental Trust (NL)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 24.9,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 25,
+      "extracted_txns": 25,
+      "true_positives": 25,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 25,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 19,
+          "evaluated": 19,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 6,
+          "evaluated": 6,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bsb-004",
+      "name": "Silk Road Banking (HK)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 42.7,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 25,
+      "extracted_txns": 24,
+      "true_positives": 24,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 100.0,
+      "recall": 96.0,
+      "f1": 97.96,
+      "exact_matches": 24,
+      "exact_accuracy": 96.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 24,
+          "evaluated": 24,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 24,
+          "evaluated": 24,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 18,
+          "evaluated": 18,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 6,
+          "evaluated": 6,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 24,
+          "evaluated": 24,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bsb-005",
+      "name": "Harbour Bank (CA)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 26.7,
+      "reconciled": "WARN",
+      "warnings": [
+        "1 running balance step discrepancies detected."
+      ]
+    },
+    {
+      "expected_txns": 7,
+      "extracted_txns": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 7,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 5,
+          "evaluated": 5,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 2,
+          "evaluated": 2,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bank_muscat",
+      "name": "Bank Muscat (OM)",
+      "type": "Synthetic Sample Statement",
+      "latency_ms": 12.8,
+      "reconciled": "PASS",
+      "warnings": []
+    }
+  ],
+  "ml_results": [
+    {
+      "expected_txns": 12,
+      "extracted_txns": 12,
+      "true_positives": 12,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 12,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 12,
+          "evaluated": 12,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 12,
+          "evaluated": 12,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 9,
+          "evaluated": 9,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 3,
+          "evaluated": 3,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 12,
+          "evaluated": 12,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bsb-001",
+      "name": "Straits Capital (SG)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 159.3,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 15,
+      "extracted_txns": 15,
+      "true_positives": 15,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 15,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 15,
+          "evaluated": 15,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 15,
+          "evaluated": 15,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 14,
+          "evaluated": 14,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 1,
+          "evaluated": 1,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 0,
+          "evaluated": 0,
+          "pct": null,
+          "available": false
+        }
+      },
+      "doc_id": "bsb-002",
+      "name": "Liberty National (US)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 244.3,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 22,
+      "extracted_txns": 22,
+      "true_positives": 22,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 22,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 22,
+          "evaluated": 22,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 22,
+          "evaluated": 22,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 17,
+          "evaluated": 17,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 5,
+          "evaluated": 5,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 0,
+          "evaluated": 0,
+          "pct": null,
+          "available": false
+        }
+      },
+      "doc_id": "bsb-003",
+      "name": "Continental Trust (NL)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 139.2,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 25,
+      "extracted_txns": 25,
+      "true_positives": 25,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 25,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 19,
+          "evaluated": 19,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 6,
+          "evaluated": 6,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bsb-004",
+      "name": "Silk Road Banking (HK)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 321.2,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 25,
+      "extracted_txns": 25,
+      "true_positives": 25,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 25,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 18,
+          "evaluated": 18,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 25,
+          "evaluated": 25,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bsb-005",
+      "name": "Harbour Bank (CA)",
+      "type": "Benchmark Statement (Development Set)",
+      "latency_ms": 92.2,
+      "reconciled": "PASS",
+      "warnings": []
+    },
+    {
+      "expected_txns": 7,
+      "extracted_txns": 7,
+      "true_positives": 7,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "exact_matches": 7,
+      "exact_accuracy": 100.0,
+      "field_accuracy": {
+        "date": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0
+        },
+        "description": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0
+        },
+        "debit": {
+          "correct": 5,
+          "evaluated": 5,
+          "pct": 100.0
+        },
+        "credit": {
+          "correct": 2,
+          "evaluated": 2,
+          "pct": 100.0
+        },
+        "balance": {
+          "correct": 7,
+          "evaluated": 7,
+          "pct": 100.0,
+          "available": true
+        }
+      },
+      "doc_id": "bank_muscat",
+      "name": "Bank Muscat (OM)",
+      "type": "Synthetic Sample Statement",
+      "latency_ms": 56.0,
+      "reconciled": "PASS",
+      "warnings": []
+    }
+  ]
+}

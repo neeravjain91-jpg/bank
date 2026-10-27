@@ -1,0 +1,187 @@
+{
+  "statement_id": "bsb-005",
+  "bank": "Harbour Bank",
+  "country": "CA",
+  "currency": "CAD",
+  "opening_balance": 10750.0,
+  "closing_balance": 11133.6,
+  "total_debits": 6886.21,
+  "total_credits": 7269.81,
+  "transactions": [
+    {
+      "date": "2025-01-02",
+      "description": "SKIP PLATS",
+      "amount": 151.3,
+      "direction": "debit",
+      "balance": 10598.7
+    },
+    {
+      "date": "2025-01-02",
+      "description": "DEPOT DIRECT SALAIRE",
+      "amount": 10.33,
+      "direction": "credit",
+      "balance": 10609.03
+    },
+    {
+      "date": "2025-01-03",
+      "description": "AMAZON.CA",
+      "amount": 1200.45,
+      "direction": "debit",
+      "balance": 9408.58
+    },
+    {
+      "date": "2025-01-06",
+      "description": "DEPOT PAIE",
+      "amount": 101.15,
+      "direction": "credit",
+      "balance": 9509.73
+    },
+    {
+      "date": "2025-01-06",
+      "description": "PETRO-CANADA",
+      "amount": 29.69,
+      "direction": "debit",
+      "balance": 9480.04
+    },
+    {
+      "date": "2025-01-06",
+      "description": "SPOTIFY CA",
+      "amount": 541.27,
+      "direction": "debit",
+      "balance": 8938.77
+    },
+    {
+      "date": "2025-01-07",
+      "description": "METRO EPICERIE",
+      "amount": 712.2,
+      "direction": "debit",
+      "balance": 8226.57
+    },
+    {
+      "date": "2025-01-09",
+      "description": "PHARMAPRIX",
+      "amount": 323.62,
+      "direction": "debit",
+      "balance": 7902.95
+    },
+    {
+      "date": "2025-01-09",
+      "description": "HYDRO-QUEBEC",
+      "amount": 588.27,
+      "direction": "debit",
+      "balance": 7314.68
+    },
+    {
+      "date": "2025-01-11",
+      "description": "CANADIAN TIRE",
+      "amount": 18.7,
+      "direction": "debit",
+      "balance": 7295.98
+    },
+    {
+      "date": "2025-01-12",
+      "description": "MAGASIN V\u00caTEMENTS",
+      "amount": 100.28,
+      "direction": "debit",
+      "balance": 7195.7
+    },
+    {
+      "date": "2025-01-12",
+      "description": "INTERETS GAGNES",
+      "amount": 31.46,
+      "direction": "credit",
+      "balance": 7227.16
+    },
+    {
+      "date": "2025-01-13",
+      "description": "DEPOT DIRECT SALAIRE",
+      "amount": 33.97,
+      "direction": "credit",
+      "balance": 7261.13
+    },
+    {
+      "date": "2025-01-14",
+      "description": "STM MONTREAL",
+      "amount": 567.79,
+      "direction": "debit",
+      "balance": 6693.34
+    },
+    {
+      "date": "2025-01-14",
+      "description": "VIREMENT INTERAC RECU",
+      "amount": 66.64,
+      "direction": "credit",
+      "balance": 6759.98
+    },
+    {
+      "date": "2025-01-16",
+      "description": "STARBUCKS CAFE",
+      "amount": 84.98,
+      "direction": "debit",
+      "balance": 6675.0
+    },
+    {
+      "date": "2025-01-16",
+      "description": "VIREMENT ELECTRONIQUE RECU",
+      "amount": 125.28,
+      "direction": "credit",
+      "balance": 6800.28
+    },
+    {
+      "date": "2025-01-19",
+      "description": "TIM HORTONS",
+      "amount": 72.92,
+      "direction": "debit",
+      "balance": 6727.36
+    },
+    {
+      "date": "2025-01-20",
+      "description": "DEPOT PAIE",
+      "amount": 6900.98,
+      "direction": "credit",
+      "balance": 13628.34
+    },
+    {
+      "date": "2025-01-21",
+      "description": "UBER COURSE",
+      "amount": 1895.8,
+      "direction": "debit",
+      "balance": 11732.54
+    },
+    {
+      "date": "2025-01-23",
+      "description": "LA BAIE",
+      "amount": 88.96,
+      "direction": "debit",
+      "balance": 11643.58
+    },
+    {
+      "date": "2025-01-24",
+      "description": "TIM HORTONS",
+      "amount": 53.5,
+      "direction": "debit",
+      "balance": 11590.08
+    },
+    {
+      "date": "2025-01-25",
+      "description": "APPLE.COM/BILL",
+      "amount": 17.26,
+      "direction": "debit",
+      "balance": 11572.82
+    },
+    {
+      "date": "2025-01-26",
+      "description": "GAZ METRO",
+      "amount": 422.11,
+      "direction": "debit",
+      "balance": 11150.71
+    },
+    {
+      "date": "2025-01-26",
+      "description": "NETFLIX.COM",
+      "amount": 17.11,
+      "direction": "debit",
+      "balance": 11133.6
+    }
+  ]
+}

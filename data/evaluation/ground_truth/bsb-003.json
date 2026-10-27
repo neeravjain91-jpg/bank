@@ -1,0 +1,166 @@
+{
+  "statement_id": "bsb-003",
+  "bank": "Continental Trust",
+  "country": "NL",
+  "currency": "EUR",
+  "opening_balance": 15320.0,
+  "closing_balance": 14674.96,
+  "total_debits": 6628.42,
+  "total_credits": 5983.38,
+  "transactions": [
+    {
+      "date": "2025-05-01",
+      "description": "BINNENKOMENDE OVERBOEKING",
+      "amount": 114.83,
+      "direction": "credit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-02",
+      "description": "SALARISBETALING",
+      "amount": 67.97,
+      "direction": "credit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-07",
+      "description": "SEPA DEBIT",
+      "amount": 218.55,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-07",
+      "description": "TIKKIE BETAALD",
+      "amount": 14.57,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-08",
+      "description": "ATM",
+      "amount": 337.56,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-09",
+      "description": "SALARISBETALING",
+      "amount": 5624.95,
+      "direction": "credit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-10",
+      "description": "PREMIE SEPA INCASSO",
+      "amount": 858.91,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-11",
+      "description": "SALARISBETALING",
+      "amount": 138.59,
+      "direction": "credit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-12",
+      "description": "SEPA INCASSO",
+      "amount": 6.9,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-15",
+      "description": "TIKKIE BETAALD",
+      "amount": 1450.77,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-15",
+      "description": "IDEAL BETALING",
+      "amount": 578.3,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-15",
+      "description": "BETAALVERZOEK",
+      "amount": 392.08,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-21",
+      "description": "TIKKIE BETAALD",
+      "amount": 482.22,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-22",
+      "description": "SEPA DEBIT",
+      "amount": 19.4,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-22",
+      "description": "BIJSCHRIJVING",
+      "amount": 37.04,
+      "direction": "credit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-24",
+      "description": "DOORLOPENDE MACHTIGING",
+      "amount": 890.43,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-27",
+      "description": "ATM",
+      "amount": 338.26,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-27",
+      "description": "ACCEPTGIRO",
+      "amount": 183.45,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-28",
+      "description": "PERIODIEKE OVERBOEKING",
+      "amount": 156.96,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-28",
+      "description": "GELDAUTOMAAT",
+      "amount": 592.96,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-29",
+      "description": "IDEAL",
+      "amount": 15.29,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-05-31",
+      "description": "OVERSCHRIJVING",
+      "amount": 91.81,
+      "direction": "debit",
+      "balance": null
+    }
+  ]
+}

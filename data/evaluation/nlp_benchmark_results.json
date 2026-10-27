@@ -1,0 +1,1804 @@
+{
+  "metadata": {
+    "evaluation_dataset": "Synthetic Banking Narrative Independent Evaluation Suite",
+    "total_examples": 80,
+    "timestamp": "2026-10-27 07:50:32 UTC",
+    "categories": [
+      "INCOME_SALARY",
+      "TRANSFER_P2P",
+      "MERCHANT_POS",
+      "UTILITIES_SERVICES",
+      "ATM_CASH",
+      "BANK_FEES",
+      "INVESTMENT_DIVIDEND",
+      "OTHER"
+    ]
+  },
+  "scikit_learn": {
+    "engine": "scikit-learn (TF-IDF + LogisticRegression)",
+    "total_evaluated": 80,
+    "correct": 67,
+    "accuracy": 83.75,
+    "macro_precision": 88.59,
+    "macro_recall": 83.75,
+    "macro_f1": 84.76,
+    "avg_latency_ms": 0.32,
+    "total_time_seconds": 0.03,
+    "category_metrics": {
+      "INCOME_SALARY": {
+        "support": 10,
+        "tp": 8,
+        "fp": 1,
+        "fn": 2,
+        "precision": 88.89,
+        "recall": 80.0,
+        "f1_score": 84.21
+      },
+      "TRANSFER_P2P": {
+        "support": 10,
+        "tp": 10,
+        "fp": 1,
+        "fn": 0,
+        "precision": 90.91,
+        "recall": 100.0,
+        "f1_score": 95.24
+      },
+      "MERCHANT_POS": {
+        "support": 10,
+        "tp": 7,
+        "fp": 0,
+        "fn": 3,
+        "precision": 100.0,
+        "recall": 70.0,
+        "f1_score": 82.35
+      },
+      "UTILITIES_SERVICES": {
+        "support": 10,
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 100.0,
+        "recall": 80.0,
+        "f1_score": 88.89
+      },
+      "ATM_CASH": {
+        "support": 10,
+        "tp": 9,
+        "fp": 1,
+        "fn": 1,
+        "precision": 90.0,
+        "recall": 90.0,
+        "f1_score": 90.0
+      },
+      "BANK_FEES": {
+        "support": 10,
+        "tp": 8,
+        "fp": 1,
+        "fn": 2,
+        "precision": 88.89,
+        "recall": 80.0,
+        "f1_score": 84.21
+      },
+      "INVESTMENT_DIVIDEND": {
+        "support": 10,
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 100.0,
+        "recall": 80.0,
+        "f1_score": 88.89
+      },
+      "OTHER": {
+        "support": 10,
+        "tp": 9,
+        "fp": 9,
+        "fn": 1,
+        "precision": 50.0,
+        "recall": 90.0,
+        "f1_score": 64.29
+      }
+    },
+    "confusion_matrix": {
+      "INCOME_SALARY": {
+        "INCOME_SALARY": 8,
+        "TRANSFER_P2P": 0,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 1,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "TRANSFER_P2P": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 10,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 0
+      },
+      "MERCHANT_POS": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 0,
+        "MERCHANT_POS": 7,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 3
+      },
+      "UTILITIES_SERVICES": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 0,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 8,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 2
+      },
+      "ATM_CASH": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 0,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 9,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "BANK_FEES": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 0,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 1,
+        "BANK_FEES": 8,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "INVESTMENT_DIVIDEND": {
+        "INCOME_SALARY": 1,
+        "TRANSFER_P2P": 0,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 8,
+        "OTHER": 1
+      },
+      "OTHER": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 1,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 9
+      }
+    },
+    "predictions": [
+      {
+        "id": "sal_01",
+        "description": "SALARY CREDIT - SCHLUMBERGER OMAN W.L.L.",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.5642,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "sal_02",
+        "description": "MONTHLY PAYROLL DIRECT DEP HEALTH SERVICES EXEC",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.3688,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "sal_03",
+        "description": "PAYROLL TRANSFER DEFENCE FORCE HO SALARY CR",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.4957,
+        "latency_ms": 1.09,
+        "correct": true
+      },
+      {
+        "id": "sal_04",
+        "description": "WAGE DEPOSIT FORTUNE TECH CORP REF W202501",
+        "expected": "INCOME_SALARY",
+        "predicted": "OTHER",
+        "confidence": 0.1942,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "sal_05",
+        "description": "SALARY PAYMENT MINISTRY OF HIGHER EDUCATION",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.3865,
+        "latency_ms": 0.53,
+        "correct": true
+      },
+      {
+        "id": "sal_06",
+        "description": "CREDIT DIRECT DEPOSIT ST JUDE HOSPITAL PAYROLL",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.4895,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "sal_07",
+        "description": "FAST INWARD SALARY TRANSFER APEX SHIPPING PTE",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.3754,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "sal_08",
+        "description": "CONSULTING REMUNERATION ADVISORY FEE WAGE",
+        "expected": "INCOME_SALARY",
+        "predicted": "BANK_FEES",
+        "confidence": 0.2843,
+        "latency_ms": 1.01,
+        "correct": false
+      },
+      {
+        "id": "sal_09",
+        "description": "BI-WEEKLY STIPEND UNIVERSITY RESEARCH SALARY",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.4833,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "sal_10",
+        "description": "SALARY DISBURSEMENT CIVIL SERVICE COMMISSION",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2932,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_01",
+        "description": "PAYNOW TO +6581234567 LUNCH SHARING REF 44921",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4299,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_02",
+        "description": "FPS TRANSFER TO: CHAN TAI MAN MOBILE 98765432",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5012,
+        "latency_ms": 0.52,
+        "correct": true
+      },
+      {
+        "id": "p2p_03",
+        "description": "FUNDS TRF TO FATIMA AL-HINAI GIFT REF 88129",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3483,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_04",
+        "description": "OVERSEAS REMITTANCE TO KHALID IBAN OM210001928374",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5388,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_05",
+        "description": "VENMO CASHOUT TO CHECKING JANE DOE P2P",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5388,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_06",
+        "description": "SEPA CREDIT TRF TO MARCO ROSSI IT60X0542811101",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3099,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_07",
+        "description": "INTERNET BANKING TRANSFER TO AHMED SISTER RENT",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4642,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_08",
+        "description": "INSTANT MONEY TRANSFER VIA ZELLE REF 990142",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2427,
+        "latency_ms": 1.53,
+        "correct": true
+      },
+      {
+        "id": "p2p_09",
+        "description": "PAYNOW TO UEN 201827419K PERSONAL TUTOR PAYMENT",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4953,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "p2p_10",
+        "description": "DOMESTIC WIRE TRANSFER TO MOHAMMED SAID REF 10293",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3437,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_01",
+        "description": "POS PURCHASE AL MEERA SUPERMARKET AL AZAIBAN",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.2707,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_02",
+        "description": "AMAZON RETAIL MARKETPLACE ORDER 112-9921448",
+        "expected": "MERCHANT_POS",
+        "predicted": "OTHER",
+        "confidence": 0.2179,
+        "latency_ms": 1.04,
+        "correct": false
+      },
+      {
+        "id": "pos_03",
+        "description": "POS CONTACTLESS PAYMENT COSTA COFFEE SEEB",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.2322,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_04",
+        "description": "SHELL SERVICE STATION PETROL FUEL FILL-UP",
+        "expected": "MERCHANT_POS",
+        "predicted": "OTHER",
+        "confidence": 0.2015,
+        "latency_ms": 0.99,
+        "correct": false
+      },
+      {
+        "id": "pos_05",
+        "description": "IKEA FURNITURE STORE RETAIL CHECKOUT REF 5581",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.3784,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_06",
+        "description": "TESCO EXTRA GROCERY SUPERSTORE STORE #2214",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.306,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_07",
+        "description": "APPLE STORE REGENT ST HARDWARE PURCHASE",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.3345,
+        "latency_ms": 1.01,
+        "correct": true
+      },
+      {
+        "id": "pos_08",
+        "description": "PHARMACY MUSCAT DRUG STORE MEDICAL RECEIPT",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.2848,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_09",
+        "description": "BOOKSTORE BORDERS RETAIL MALL PURCHASE POS",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.275,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "pos_10",
+        "description": "SHANGRI-LA RESORT DINING RESTAURANT INVOICE",
+        "expected": "MERCHANT_POS",
+        "predicted": "OTHER",
+        "confidence": 0.1716,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "utl_01",
+        "description": "NAMA ELECTRICITY BILL PAYMENT MUSCAT GOVERNORATE",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.4325,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "utl_02",
+        "description": "MAZOON ELECTRICITY COMPANY AUTO-DEBIT UTILITY",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.4118,
+        "latency_ms": 0.51,
+        "correct": true
+      },
+      {
+        "id": "utl_03",
+        "description": "PUBLIC AUTHORITY FOR WATER DIAM WATER BILL",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.434,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "utl_04",
+        "description": "VODAFONE OMAN POSTPAID MOBILE BILL PYMT 8821",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.2895,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "utl_05",
+        "description": "SINGTEL POSTPAID MOBILE & FIBRE BROADBAND BILL",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.3946,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "utl_06",
+        "description": "CON EDISON RESIDENTIAL POWER & GAS UTILITIES",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.3337,
+        "latency_ms": 1.03,
+        "correct": true
+      },
+      {
+        "id": "utl_07",
+        "description": "BRITISH GAS MONTHLY ENERGY DIRECT DEBIT",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "OTHER",
+        "confidence": 0.214,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "utl_08",
+        "description": "CITY MUNICIPALITY TRASH SEWER SERVICE UTILITY",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.2825,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "utl_09",
+        "description": "AWASR FIBRE INTERNET SERVICE SUBSCRIPTION",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "OTHER",
+        "confidence": 0.2024,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "utl_10",
+        "description": "ENEL ENERGIA BOLLETTA LUCE E GAS UTILITY",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.3548,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "atm_01",
+        "description": "ATM CASH WITHDRAWAL AL KHOUD BRANCH MACHINE 02",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.6971,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "atm_02",
+        "description": "OFF-US ATM W/D NATIONAL BANK OF OMAN ATM 4419",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.2294,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "atm_03",
+        "description": "DBS ATM CASH DISPENSE ORCHARD ROAD SINGAPORE",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.5096,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "atm_04",
+        "description": "CHASE BANK ATM CASH WITHDRAWAL 5TH AVE NYC",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.5926,
+        "latency_ms": 1.28,
+        "correct": true
+      },
+      {
+        "id": "atm_05",
+        "description": "HSBC ATM WITHDRAWAL CASH CENTRAL HK ISLAND",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.6098,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "atm_06",
+        "description": "BARCLAYS ATM CASH WITHDRAWAL OXFORD STREET",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.7724,
+        "latency_ms": 0.98,
+        "correct": true
+      },
+      {
+        "id": "atm_07",
+        "description": "ABN AMRO GELDAUTOMAAT PIN CONTANT GELD",
+        "expected": "ATM_CASH",
+        "predicted": "OTHER",
+        "confidence": 0.1832,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "atm_08",
+        "description": "ATM CASH MACHINE TRANSACTION AIRPORT TERMINAL 1",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.574,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "atm_09",
+        "description": "CASH WITHDRAWAL CIRRUS NETWORK ATM 99812",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.7039,
+        "latency_ms": 0.99,
+        "correct": true
+      },
+      {
+        "id": "atm_10",
+        "description": "TELLER CASH WITHDRAWAL AT BRANCH COUNTER",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.4969,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_01",
+        "description": "MONTHLY LEDGER FEE NON-MAINTENANCE MIN BALANCE",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.3225,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_02",
+        "description": "OVERDRAFT FACILITY USAGE FEE CHARGE 2025",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.6048,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_03",
+        "description": "INTERNATIONAL ATM CASH WITHDRAWAL CHARGE FEE",
+        "expected": "BANK_FEES",
+        "predicted": "ATM_CASH",
+        "confidence": 0.5003,
+        "latency_ms": 1.03,
+        "correct": false
+      },
+      {
+        "id": "fee_04",
+        "description": "TELEGRAPHIC TRANSFER OUTWARD SWIFT COMMISSION",
+        "expected": "BANK_FEES",
+        "predicted": "OTHER",
+        "confidence": 0.2161,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "fee_05",
+        "description": "CHEQUE BOOK ISSUANCE FEE 25 LEAVES CHARGED",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.3946,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_06",
+        "description": "DORMANT ACCOUNT REACTIVATION PENALTY FEE",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.4492,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_07",
+        "description": "ANNUAL DEBIT CARD RENEWAL ADMINISTRATION CHG",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.2742,
+        "latency_ms": 0.99,
+        "correct": true
+      },
+      {
+        "id": "fee_08",
+        "description": "UNPAID DIRECT DEBIT REVERSAL SERVICE CHARGE",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.3464,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_09",
+        "description": "CURRENCY CONVERSION COMMISSION FX BANK CHARGE",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.3288,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "fee_10",
+        "description": "PAPER STATEMENT MAILING POSTAGE FEE ACCOUNT",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.5055,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_01",
+        "description": "CASH DIVIDEND BANK DHOFAR COMMON SHARES 2024",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.4243,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "inv_02",
+        "description": "DIVIDEND DISTRIBUTION VANGUARD S&P 500 ETF",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.5012,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_03",
+        "description": "MSX OMAN TELECOM INTERIM DIVIDEND DISTRIBUTION",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.3643,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_04",
+        "description": "COUPON PAYMENT OMAN GOVERNMENT SOVEREIGN SUKUK",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "OTHER",
+        "confidence": 0.1988,
+        "latency_ms": 1.0,
+        "correct": false
+      },
+      {
+        "id": "inv_05",
+        "description": "QUARTERLY DIVIDEND APPLE INC RECORD DATE 2025",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.2439,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_06",
+        "description": "TREASURY BOND INTEREST PAYMENT YIELD POSTED",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.3169,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_07",
+        "description": "MUTUAL FUND CAPITAL GAIN DISTRIBUTION BLACKROCK",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.4737,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_08",
+        "description": "REAL ESTATE INVESTMENT TRUST REIT DIVIDEND CR",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.5224,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "inv_09",
+        "description": "SHAREHOLDERS DIVIDEND CREDIT ARAMCO ENERGY",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INVESTMENT_DIVIDEND",
+        "confidence": 0.4883,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "inv_10",
+        "description": "FIXED DEPOSIT MATURITY INTEREST ACCRUAL CREDIT",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2307,
+        "latency_ms": 0.99,
+        "correct": false
+      },
+      {
+        "id": "oth_01",
+        "description": "ROUND-UP AUTO SAVINGS SWEEP TRANSFER DEBIT",
+        "expected": "OTHER",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2313,
+        "latency_ms": 0.0,
+        "correct": false
+      },
+      {
+        "id": "oth_02",
+        "description": "INTERNAL GL CLEARING OFFSET ACCOUNT 009214",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.2307,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "oth_03",
+        "description": "BALANCE SHEET ADJUSTMENT SYSTEM ENTRY VERIFY",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.5319,
+        "latency_ms": 1.0,
+        "correct": true
+      },
+      {
+        "id": "oth_04",
+        "description": "ESCROW RETENTION RELEASE PHASE 2 CONTRACT",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.1716,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "oth_05",
+        "description": "CASHBACK REWARDS REBATE POSTING CREDIT 2025",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.2743,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "oth_06",
+        "description": "COLLATERAL HOLD RELEASE LIEN CANCELLATION",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.1716,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "oth_07",
+        "description": "SUSPENSE ACCOUNT REVERSAL TRANSIT BATCH 44",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.2859,
+        "latency_ms": 1.16,
+        "correct": true
+      },
+      {
+        "id": "oth_08",
+        "description": "SECURITY DEPOSIT RETURN APARTMENT LEASE 302",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.2293,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "oth_09",
+        "description": "ROUNDING FRACTIONAL SETTLEMENT CORRECTION",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.2247,
+        "latency_ms": 0.0,
+        "correct": true
+      },
+      {
+        "id": "oth_10",
+        "description": "UNSPECIFIED GENERAL JOURNAL POSTING ADJUSTMENT",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.4006,
+        "latency_ms": 0.97,
+        "correct": true
+      }
+    ]
+  },
+  "transformers": {
+    "engine": "Hugging Face Transformers (typeform/distilbert-base-uncased-mnli)",
+    "total_evaluated": 80,
+    "correct": 33,
+    "accuracy": 41.25,
+    "macro_precision": 56.73,
+    "macro_recall": 41.25,
+    "macro_f1": 37.33,
+    "avg_latency_ms": 95.59,
+    "total_time_seconds": 7.65,
+    "category_metrics": {
+      "INCOME_SALARY": {
+        "support": 10,
+        "tp": 7,
+        "fp": 11,
+        "fn": 3,
+        "precision": 38.89,
+        "recall": 70.0,
+        "f1_score": 50.0
+      },
+      "TRANSFER_P2P": {
+        "support": 10,
+        "tp": 10,
+        "fp": 29,
+        "fn": 0,
+        "precision": 25.64,
+        "recall": 100.0,
+        "f1_score": 40.82
+      },
+      "MERCHANT_POS": {
+        "support": 10,
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 100.0,
+        "recall": 80.0,
+        "f1_score": 88.89
+      },
+      "UTILITIES_SERVICES": {
+        "support": 10,
+        "tp": 3,
+        "fp": 0,
+        "fn": 7,
+        "precision": 100.0,
+        "recall": 30.0,
+        "f1_score": 46.15
+      },
+      "ATM_CASH": {
+        "support": 10,
+        "tp": 3,
+        "fp": 1,
+        "fn": 7,
+        "precision": 75.0,
+        "recall": 30.0,
+        "f1_score": 42.86
+      },
+      "BANK_FEES": {
+        "support": 10,
+        "tp": 1,
+        "fp": 0,
+        "fn": 9,
+        "precision": 100.0,
+        "recall": 10.0,
+        "f1_score": 18.18
+      },
+      "INVESTMENT_DIVIDEND": {
+        "support": 10,
+        "tp": 0,
+        "fp": 0,
+        "fn": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0
+      },
+      "OTHER": {
+        "support": 10,
+        "tp": 1,
+        "fp": 6,
+        "fn": 9,
+        "precision": 14.29,
+        "recall": 10.0,
+        "f1_score": 11.76
+      }
+    },
+    "confusion_matrix": {
+      "INCOME_SALARY": {
+        "INCOME_SALARY": 7,
+        "TRANSFER_P2P": 2,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "TRANSFER_P2P": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 10,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 0
+      },
+      "MERCHANT_POS": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 2,
+        "MERCHANT_POS": 8,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 0
+      },
+      "UTILITIES_SERVICES": {
+        "INCOME_SALARY": 3,
+        "TRANSFER_P2P": 3,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 3,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "ATM_CASH": {
+        "INCOME_SALARY": 0,
+        "TRANSFER_P2P": 5,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 3,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 2
+      },
+      "BANK_FEES": {
+        "INCOME_SALARY": 2,
+        "TRANSFER_P2P": 5,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 1,
+        "BANK_FEES": 1,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "INVESTMENT_DIVIDEND": {
+        "INCOME_SALARY": 2,
+        "TRANSFER_P2P": 7,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      },
+      "OTHER": {
+        "INCOME_SALARY": 4,
+        "TRANSFER_P2P": 5,
+        "MERCHANT_POS": 0,
+        "UTILITIES_SERVICES": 0,
+        "ATM_CASH": 0,
+        "BANK_FEES": 0,
+        "INVESTMENT_DIVIDEND": 0,
+        "OTHER": 1
+      }
+    },
+    "predictions": [
+      {
+        "id": "sal_01",
+        "description": "SALARY CREDIT - SCHLUMBERGER OMAN W.L.L.",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.914,
+        "latency_ms": 113.06,
+        "correct": true
+      },
+      {
+        "id": "sal_02",
+        "description": "MONTHLY PAYROLL DIRECT DEP HEALTH SERVICES EXEC",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.6978,
+        "latency_ms": 99.51,
+        "correct": true
+      },
+      {
+        "id": "sal_03",
+        "description": "PAYROLL TRANSFER DEFENCE FORCE HO SALARY CR",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.837,
+        "latency_ms": 96.3,
+        "correct": true
+      },
+      {
+        "id": "sal_04",
+        "description": "WAGE DEPOSIT FORTUNE TECH CORP REF W202501",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.4686,
+        "latency_ms": 104.17,
+        "correct": true
+      },
+      {
+        "id": "sal_05",
+        "description": "SALARY PAYMENT MINISTRY OF HIGHER EDUCATION",
+        "expected": "INCOME_SALARY",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.8619,
+        "latency_ms": 95.55,
+        "correct": false
+      },
+      {
+        "id": "sal_06",
+        "description": "CREDIT DIRECT DEPOSIT ST JUDE HOSPITAL PAYROLL",
+        "expected": "INCOME_SALARY",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.6689,
+        "latency_ms": 94.38,
+        "correct": false
+      },
+      {
+        "id": "sal_07",
+        "description": "FAST INWARD SALARY TRANSFER APEX SHIPPING PTE",
+        "expected": "INCOME_SALARY",
+        "predicted": "OTHER",
+        "confidence": 0.3977,
+        "latency_ms": 95.06,
+        "correct": false
+      },
+      {
+        "id": "sal_08",
+        "description": "CONSULTING REMUNERATION ADVISORY FEE WAGE",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.4453,
+        "latency_ms": 89.0,
+        "correct": true
+      },
+      {
+        "id": "sal_09",
+        "description": "BI-WEEKLY STIPEND UNIVERSITY RESEARCH SALARY",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.8216,
+        "latency_ms": 93.02,
+        "correct": true
+      },
+      {
+        "id": "sal_10",
+        "description": "SALARY DISBURSEMENT CIVIL SERVICE COMMISSION",
+        "expected": "INCOME_SALARY",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.5936,
+        "latency_ms": 93.11,
+        "correct": true
+      },
+      {
+        "id": "p2p_01",
+        "description": "PAYNOW TO +6581234567 LUNCH SHARING REF 44921",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.6233,
+        "latency_ms": 98.77,
+        "correct": true
+      },
+      {
+        "id": "p2p_02",
+        "description": "FPS TRANSFER TO: CHAN TAI MAN MOBILE 98765432",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.7618,
+        "latency_ms": 99.92,
+        "correct": true
+      },
+      {
+        "id": "p2p_03",
+        "description": "FUNDS TRF TO FATIMA AL-HINAI GIFT REF 88129",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4738,
+        "latency_ms": 105.47,
+        "correct": true
+      },
+      {
+        "id": "p2p_04",
+        "description": "OVERSEAS REMITTANCE TO KHALID IBAN OM210001928374",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5584,
+        "latency_ms": 117.32,
+        "correct": true
+      },
+      {
+        "id": "p2p_05",
+        "description": "VENMO CASHOUT TO CHECKING JANE DOE P2P",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.7116,
+        "latency_ms": 100.67,
+        "correct": true
+      },
+      {
+        "id": "p2p_06",
+        "description": "SEPA CREDIT TRF TO MARCO ROSSI IT60X0542811101",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2672,
+        "latency_ms": 110.65,
+        "correct": true
+      },
+      {
+        "id": "p2p_07",
+        "description": "INTERNET BANKING TRANSFER TO AHMED SISTER RENT",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.8497,
+        "latency_ms": 99.56,
+        "correct": true
+      },
+      {
+        "id": "p2p_08",
+        "description": "INSTANT MONEY TRANSFER VIA ZELLE REF 990142",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.7863,
+        "latency_ms": 97.39,
+        "correct": true
+      },
+      {
+        "id": "p2p_09",
+        "description": "PAYNOW TO UEN 201827419K PERSONAL TUTOR PAYMENT",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.9235,
+        "latency_ms": 103.44,
+        "correct": true
+      },
+      {
+        "id": "p2p_10",
+        "description": "DOMESTIC WIRE TRANSFER TO MOHAMMED SAID REF 10293",
+        "expected": "TRANSFER_P2P",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4094,
+        "latency_ms": 99.17,
+        "correct": true
+      },
+      {
+        "id": "pos_01",
+        "description": "POS PURCHASE AL MEERA SUPERMARKET AL AZAIBAN",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.5338,
+        "latency_ms": 101.99,
+        "correct": true
+      },
+      {
+        "id": "pos_02",
+        "description": "AMAZON RETAIL MARKETPLACE ORDER 112-9921448",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.7246,
+        "latency_ms": 96.31,
+        "correct": true
+      },
+      {
+        "id": "pos_03",
+        "description": "POS CONTACTLESS PAYMENT COSTA COFFEE SEEB",
+        "expected": "MERCHANT_POS",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5616,
+        "latency_ms": 95.73,
+        "correct": false
+      },
+      {
+        "id": "pos_04",
+        "description": "SHELL SERVICE STATION PETROL FUEL FILL-UP",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.2464,
+        "latency_ms": 95.25,
+        "correct": true
+      },
+      {
+        "id": "pos_05",
+        "description": "IKEA FURNITURE STORE RETAIL CHECKOUT REF 5581",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.4969,
+        "latency_ms": 99.07,
+        "correct": true
+      },
+      {
+        "id": "pos_06",
+        "description": "TESCO EXTRA GROCERY SUPERSTORE STORE #2214",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.5542,
+        "latency_ms": 95.23,
+        "correct": true
+      },
+      {
+        "id": "pos_07",
+        "description": "APPLE STORE REGENT ST HARDWARE PURCHASE",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.9344,
+        "latency_ms": 83.6,
+        "correct": true
+      },
+      {
+        "id": "pos_08",
+        "description": "PHARMACY MUSCAT DRUG STORE MEDICAL RECEIPT",
+        "expected": "MERCHANT_POS",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5537,
+        "latency_ms": 87.44,
+        "correct": false
+      },
+      {
+        "id": "pos_09",
+        "description": "BOOKSTORE BORDERS RETAIL MALL PURCHASE POS",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.9848,
+        "latency_ms": 89.38,
+        "correct": true
+      },
+      {
+        "id": "pos_10",
+        "description": "SHANGRI-LA RESORT DINING RESTAURANT INVOICE",
+        "expected": "MERCHANT_POS",
+        "predicted": "MERCHANT_POS",
+        "confidence": 0.3277,
+        "latency_ms": 92.79,
+        "correct": true
+      },
+      {
+        "id": "utl_01",
+        "description": "NAMA ELECTRICITY BILL PAYMENT MUSCAT GOVERNORATE",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.4223,
+        "latency_ms": 85.63,
+        "correct": true
+      },
+      {
+        "id": "utl_02",
+        "description": "MAZOON ELECTRICITY COMPANY AUTO-DEBIT UTILITY",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.7216,
+        "latency_ms": 94.14,
+        "correct": true
+      },
+      {
+        "id": "utl_03",
+        "description": "PUBLIC AUTHORITY FOR WATER DIAM WATER BILL",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "OTHER",
+        "confidence": 0.2459,
+        "latency_ms": 96.65,
+        "correct": false
+      },
+      {
+        "id": "utl_04",
+        "description": "VODAFONE OMAN POSTPAID MOBILE BILL PYMT 8821",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "UTILITIES_SERVICES",
+        "confidence": 0.3977,
+        "latency_ms": 104.67,
+        "correct": true
+      },
+      {
+        "id": "utl_05",
+        "description": "SINGTEL POSTPAID MOBILE & FIBRE BROADBAND BILL",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3008,
+        "latency_ms": 99.56,
+        "correct": false
+      },
+      {
+        "id": "utl_06",
+        "description": "CON EDISON RESIDENTIAL POWER & GAS UTILITIES",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2559,
+        "latency_ms": 91.39,
+        "correct": false
+      },
+      {
+        "id": "utl_07",
+        "description": "BRITISH GAS MONTHLY ENERGY DIRECT DEBIT",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4757,
+        "latency_ms": 95.92,
+        "correct": false
+      },
+      {
+        "id": "utl_08",
+        "description": "CITY MUNICIPALITY TRASH SEWER SERVICE UTILITY",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2737,
+        "latency_ms": 100.56,
+        "correct": false
+      },
+      {
+        "id": "utl_09",
+        "description": "AWASR FIBRE INTERNET SERVICE SUBSCRIPTION",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2929,
+        "latency_ms": 94.13,
+        "correct": false
+      },
+      {
+        "id": "utl_10",
+        "description": "ENEL ENERGIA BOLLETTA LUCE E GAS UTILITY",
+        "expected": "UTILITIES_SERVICES",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2215,
+        "latency_ms": 103.42,
+        "correct": false
+      },
+      {
+        "id": "atm_01",
+        "description": "ATM CASH WITHDRAWAL AL KHOUD BRANCH MACHINE 02",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.7522,
+        "latency_ms": 98.86,
+        "correct": true
+      },
+      {
+        "id": "atm_02",
+        "description": "OFF-US ATM W/D NATIONAL BANK OF OMAN ATM 4419",
+        "expected": "ATM_CASH",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2403,
+        "latency_ms": 108.79,
+        "correct": false
+      },
+      {
+        "id": "atm_03",
+        "description": "DBS ATM CASH DISPENSE ORCHARD ROAD SINGAPORE",
+        "expected": "ATM_CASH",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.388,
+        "latency_ms": 97.1,
+        "correct": false
+      },
+      {
+        "id": "atm_04",
+        "description": "CHASE BANK ATM CASH WITHDRAWAL 5TH AVE NYC",
+        "expected": "ATM_CASH",
+        "predicted": "OTHER",
+        "confidence": 0.4017,
+        "latency_ms": 98.55,
+        "correct": false
+      },
+      {
+        "id": "atm_05",
+        "description": "HSBC ATM WITHDRAWAL CASH CENTRAL HK ISLAND",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.6311,
+        "latency_ms": 90.46,
+        "correct": true
+      },
+      {
+        "id": "atm_06",
+        "description": "BARCLAYS ATM CASH WITHDRAWAL OXFORD STREET",
+        "expected": "ATM_CASH",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5701,
+        "latency_ms": 86.69,
+        "correct": false
+      },
+      {
+        "id": "atm_07",
+        "description": "ABN AMRO GELDAUTOMAAT PIN CONTANT GELD",
+        "expected": "ATM_CASH",
+        "predicted": "OTHER",
+        "confidence": 0.2578,
+        "latency_ms": 100.53,
+        "correct": false
+      },
+      {
+        "id": "atm_08",
+        "description": "ATM CASH MACHINE TRANSACTION AIRPORT TERMINAL 1",
+        "expected": "ATM_CASH",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5723,
+        "latency_ms": 89.21,
+        "correct": false
+      },
+      {
+        "id": "atm_09",
+        "description": "CASH WITHDRAWAL CIRRUS NETWORK ATM 99812",
+        "expected": "ATM_CASH",
+        "predicted": "ATM_CASH",
+        "confidence": 0.9691,
+        "latency_ms": 89.84,
+        "correct": true
+      },
+      {
+        "id": "atm_10",
+        "description": "TELLER CASH WITHDRAWAL AT BRANCH COUNTER",
+        "expected": "ATM_CASH",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.6453,
+        "latency_ms": 80.8,
+        "correct": false
+      },
+      {
+        "id": "fee_01",
+        "description": "MONTHLY LEDGER FEE NON-MAINTENANCE MIN BALANCE",
+        "expected": "BANK_FEES",
+        "predicted": "OTHER",
+        "confidence": 0.3432,
+        "latency_ms": 89.22,
+        "correct": false
+      },
+      {
+        "id": "fee_02",
+        "description": "OVERDRAFT FACILITY USAGE FEE CHARGE 2025",
+        "expected": "BANK_FEES",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.3596,
+        "latency_ms": 96.18,
+        "correct": false
+      },
+      {
+        "id": "fee_03",
+        "description": "INTERNATIONAL ATM CASH WITHDRAWAL CHARGE FEE",
+        "expected": "BANK_FEES",
+        "predicted": "ATM_CASH",
+        "confidence": 0.4629,
+        "latency_ms": 88.62,
+        "correct": false
+      },
+      {
+        "id": "fee_04",
+        "description": "TELEGRAPHIC TRANSFER OUTWARD SWIFT COMMISSION",
+        "expected": "BANK_FEES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3292,
+        "latency_ms": 90.34,
+        "correct": false
+      },
+      {
+        "id": "fee_05",
+        "description": "CHEQUE BOOK ISSUANCE FEE 25 LEAVES CHARGED",
+        "expected": "BANK_FEES",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.3228,
+        "latency_ms": 93.64,
+        "correct": false
+      },
+      {
+        "id": "fee_06",
+        "description": "DORMANT ACCOUNT REACTIVATION PENALTY FEE",
+        "expected": "BANK_FEES",
+        "predicted": "BANK_FEES",
+        "confidence": 0.367,
+        "latency_ms": 92.16,
+        "correct": true
+      },
+      {
+        "id": "fee_07",
+        "description": "ANNUAL DEBIT CARD RENEWAL ADMINISTRATION CHG",
+        "expected": "BANK_FEES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3389,
+        "latency_ms": 91.48,
+        "correct": false
+      },
+      {
+        "id": "fee_08",
+        "description": "UNPAID DIRECT DEBIT REVERSAL SERVICE CHARGE",
+        "expected": "BANK_FEES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.555,
+        "latency_ms": 94.22,
+        "correct": false
+      },
+      {
+        "id": "fee_09",
+        "description": "CURRENCY CONVERSION COMMISSION FX BANK CHARGE",
+        "expected": "BANK_FEES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.548,
+        "latency_ms": 94.5,
+        "correct": false
+      },
+      {
+        "id": "fee_10",
+        "description": "PAPER STATEMENT MAILING POSTAGE FEE ACCOUNT",
+        "expected": "BANK_FEES",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4053,
+        "latency_ms": 96.0,
+        "correct": false
+      },
+      {
+        "id": "inv_01",
+        "description": "CASH DIVIDEND BANK DHOFAR COMMON SHARES 2024",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.3651,
+        "latency_ms": 104.15,
+        "correct": false
+      },
+      {
+        "id": "inv_02",
+        "description": "DIVIDEND DISTRIBUTION VANGUARD S&P 500 ETF",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4509,
+        "latency_ms": 108.2,
+        "correct": false
+      },
+      {
+        "id": "inv_03",
+        "description": "MSX OMAN TELECOM INTERIM DIVIDEND DISTRIBUTION",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2743,
+        "latency_ms": 96.35,
+        "correct": false
+      },
+      {
+        "id": "inv_04",
+        "description": "COUPON PAYMENT OMAN GOVERNMENT SOVEREIGN SUKUK",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.7751,
+        "latency_ms": 95.9,
+        "correct": false
+      },
+      {
+        "id": "inv_05",
+        "description": "QUARTERLY DIVIDEND APPLE INC RECORD DATE 2025",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2632,
+        "latency_ms": 93.72,
+        "correct": false
+      },
+      {
+        "id": "inv_06",
+        "description": "TREASURY BOND INTEREST PAYMENT YIELD POSTED",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.5409,
+        "latency_ms": 83.85,
+        "correct": false
+      },
+      {
+        "id": "inv_07",
+        "description": "MUTUAL FUND CAPITAL GAIN DISTRIBUTION BLACKROCK",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.7627,
+        "latency_ms": 86.54,
+        "correct": false
+      },
+      {
+        "id": "inv_08",
+        "description": "REAL ESTATE INVESTMENT TRUST REIT DIVIDEND CR",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4287,
+        "latency_ms": 87.96,
+        "correct": false
+      },
+      {
+        "id": "inv_09",
+        "description": "SHAREHOLDERS DIVIDEND CREDIT ARAMCO ENERGY",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "OTHER",
+        "confidence": 0.2482,
+        "latency_ms": 84.66,
+        "correct": false
+      },
+      {
+        "id": "inv_10",
+        "description": "FIXED DEPOSIT MATURITY INTEREST ACCRUAL CREDIT",
+        "expected": "INVESTMENT_DIVIDEND",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3628,
+        "latency_ms": 89.91,
+        "correct": false
+      },
+      {
+        "id": "oth_01",
+        "description": "ROUND-UP AUTO SAVINGS SWEEP TRANSFER DEBIT",
+        "expected": "OTHER",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.7678,
+        "latency_ms": 93.4,
+        "correct": false
+      },
+      {
+        "id": "oth_02",
+        "description": "INTERNAL GL CLEARING OFFSET ACCOUNT 009214",
+        "expected": "OTHER",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.2951,
+        "latency_ms": 97.18,
+        "correct": false
+      },
+      {
+        "id": "oth_03",
+        "description": "BALANCE SHEET ADJUSTMENT SYSTEM ENTRY VERIFY",
+        "expected": "OTHER",
+        "predicted": "OTHER",
+        "confidence": 0.2745,
+        "latency_ms": 87.21,
+        "correct": true
+      },
+      {
+        "id": "oth_04",
+        "description": "ESCROW RETENTION RELEASE PHASE 2 CONTRACT",
+        "expected": "OTHER",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2915,
+        "latency_ms": 94.85,
+        "correct": false
+      },
+      {
+        "id": "oth_05",
+        "description": "CASHBACK REWARDS REBATE POSTING CREDIT 2025",
+        "expected": "OTHER",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.6777,
+        "latency_ms": 97.98,
+        "correct": false
+      },
+      {
+        "id": "oth_06",
+        "description": "COLLATERAL HOLD RELEASE LIEN CANCELLATION",
+        "expected": "OTHER",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4185,
+        "latency_ms": 96.35,
+        "correct": false
+      },
+      {
+        "id": "oth_07",
+        "description": "SUSPENSE ACCOUNT REVERSAL TRANSIT BATCH 44",
+        "expected": "OTHER",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2579,
+        "latency_ms": 90.96,
+        "correct": false
+      },
+      {
+        "id": "oth_08",
+        "description": "SECURITY DEPOSIT RETURN APARTMENT LEASE 302",
+        "expected": "OTHER",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.4704,
+        "latency_ms": 97.09,
+        "correct": false
+      },
+      {
+        "id": "oth_09",
+        "description": "ROUNDING FRACTIONAL SETTLEMENT CORRECTION",
+        "expected": "OTHER",
+        "predicted": "TRANSFER_P2P",
+        "confidence": 0.3653,
+        "latency_ms": 92.41,
+        "correct": false
+      },
+      {
+        "id": "oth_10",
+        "description": "UNSPECIFIED GENERAL JOURNAL POSTING ADJUSTMENT",
+        "expected": "OTHER",
+        "predicted": "INCOME_SALARY",
+        "confidence": 0.2757,
+        "latency_ms": 93.18,
+        "correct": false
+      }
+    ]
+  },
+  "comparative_summary": {
+    "accuracy_scikit_learn": 83.75,
+    "accuracy_transformers": 41.25,
+    "macro_f1_scikit_learn": 84.76,
+    "macro_f1_transformers": 37.33,
+    "avg_latency_ms_scikit_learn": 0.32,
+    "avg_latency_ms_transformers": 95.59,
+    "latency_ratio": 298.7
+  }
+}

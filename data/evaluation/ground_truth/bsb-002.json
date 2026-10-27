@@ -1,0 +1,117 @@
+{
+  "statement_id": "bsb-002",
+  "bank": "Liberty National Bank",
+  "country": "US",
+  "currency": "USD",
+  "opening_balance": null,
+  "closing_balance": null,
+  "total_debits": 7699.43,
+  "total_credits": 13.84,
+  "transactions": [
+    {
+      "date": "2025-09-01",
+      "description": "UBER TRIP REF: 775648 Chevron station #0441 38.2gal premium 0.00",
+      "amount": 531.56,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-07",
+      "description": "WHOLE FOODS MARKET REF: 369975 Walmart Supercenter #0441 self-checkout txn 0.00",
+      "amount": 1124.43,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-08",
+      "description": "CHIPOTLE MEXICAN McDonald's #8841 receipt 44-2019-US 0.00",
+      "amount": 5.32,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-10",
+      "description": "APPLE.COM/BILL REF: 945454 Netflix US monthly standard 4K plan USD 0.00",
+      "amount": 293.13,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-12",
+      "description": "REWARDS REDEMPTION Chase Ultimate Rewards credit ref CUR-8841 0.00",
+      "amount": 13.84,
+      "direction": "credit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-13",
+      "description": "STARBUCKS COFFEE DoorDash order #DD-44920-NYC ETA 35min 0.00",
+      "amount": 1520.75,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-13",
+      "description": "WALMART SUPERCENTER Kroger store #8841 receipt 44-2019-US 0.00",
+      "amount": 28.13,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-13",
+      "description": "SPOTIFY USA REF.: POS-188972 Hulu No Ads monthly subscription USD 0.00",
+      "amount": 8.52,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-17",
+      "description": "TARGET STORE Trader Joe's receipt #TJ-44920-US store 421 0.00",
+      "amount": 1912.64,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-21",
+      "description": "APPLE.COM/BILL Hulu No Ads monthly subscription USD 0.00",
+      "amount": 1095.48,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-23",
+      "description": "NETFLIX.COM Uber trip UBR-4421-002-NYC receipt 0.00",
+      "amount": 30.21,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-26",
+      "description": "CLOTHING STORE Gap Factory receipt #GAP-44920-NY store 88 0.00",
+      "amount": 42.22,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-26",
+      "description": "SPOTIFY USA Netflix US monthly standard 4K plan USD 0.00",
+      "amount": 5.08,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-26",
+      "description": "WALGREENS Walgreens store #0441 script fill #WLG-8841 0.00",
+      "amount": 1065.49,
+      "direction": "debit",
+      "balance": null
+    },
+    {
+      "date": "2025-09-28",
+      "description": "COSTCO WHOLESALE REF.: POS-402448 Kroger store #8841 receipt 44-2019-US 0.00",
+      "amount": 36.47,
+      "direction": "debit",
+      "balance": null
+    }
+  ]
+}

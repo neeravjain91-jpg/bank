@@ -1,0 +1,212 @@
+{
+  "statement_id": "bsb-004",
+  "bank": "Silk Road Banking",
+  "country": "HK",
+  "currency": "HKD",
+  "opening_balance": null,
+  "closing_balance": null,
+  "total_debits": 40729.85,
+  "total_credits": 36664.82,
+  "transactions": [
+    {
+      "date": "2025-09-01",
+      "description": "Faster payment FASTER PAYMENT 8742522 TO: Deliveroo P3704085QR OTHER",
+      "amount": 153.01,
+      "direction": "debit",
+      "balance": 42426.99,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-02",
+      "description": "Fps payment FPS TRANSFER 4317616 TO: Watsons HK OTHER",
+      "amount": 1932.0,
+      "direction": "debit",
+      "balance": 40494.99,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-03",
+      "description": "Fps transfer FASTER PAYMENT 1105321 TO: Deliveroo P4161927QR OTHER",
+      "amount": 292.69,
+      "direction": "debit",
+      "balance": 40202.3,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-05",
+      "description": "Fps received FPS TRANSFER 4035786 TO: MPF OTHER",
+      "amount": 298.25,
+      "direction": "credit",
+      "balance": 40500.55,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-06",
+      "description": "Chats payment FPS PAYMENT 4665823 TO: MTR P4727275QR OTHER",
+      "amount": 1364.41,
+      "direction": "debit",
+      "balance": 39136.14,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-07",
+      "description": "Chats payment FPS PAYMENT 4342274 TO: Fortress OTHER",
+      "amount": 392.44,
+      "direction": "debit",
+      "balance": 38743.7,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-12",
+      "description": "Fps FASTER PAYMENT 5098032 TO: Deliveroo OTHER",
+      "amount": 6510.43,
+      "direction": "debit",
+      "balance": 32233.27,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-13",
+      "description": "Fps payment FASTER PAYMENT 4534921 TO: MTR OTHER",
+      "amount": 4771.08,
+      "direction": "debit",
+      "balance": 27462.19,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-13",
+      "description": "Chats payment FPS TRANSFER 7940237 TO: H&M HK OTHER",
+      "amount": 232.85,
+      "direction": "debit",
+      "balance": 27229.34,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-14",
+      "description": "Fps transfer FASTER PAYMENT 6757548 TO: CLP Power P6643265QR OTHER",
+      "amount": 181.62,
+      "direction": "debit",
+      "balance": 27047.72,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-14",
+      "description": "Chats FASTER PAYMENT 9982744 TO: Zara HK OTHER",
+      "amount": 3554.02,
+      "direction": "debit",
+      "balance": 23493.7,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-17",
+      "description": "Fps payment FASTER PAYMENT 7869997 TO: Deliveroo OTHER",
+      "amount": 4728.04,
+      "direction": "debit",
+      "balance": 18765.66,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-19",
+      "description": "Fps received FPS PAYMENT 9214246 TO: RateSetter HK OTHER",
+      "amount": 235.54,
+      "direction": "credit",
+      "balance": 19001.2,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-19",
+      "description": "Fps FPS PAYMENT 9247994 TO: Amazon OTHER",
+      "amount": 263.97,
+      "direction": "debit",
+      "balance": 18737.23,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-20",
+      "description": "Chats FASTER PAYMENT 3559781 TO: H&M HK OTHER",
+      "amount": 373.11,
+      "direction": "debit",
+      "balance": 18364.12,
+      "account_id": "acc-hkd-current"
+    },
+    {
+      "date": "2025-09-20",
+      "description": "Fps transfer FASTER PAYMENT 6611800 TO: PARKnSHOP OTHER",
+      "amount": 181.04,
+      "direction": "debit",
+      "balance": 149818.96,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-20",
+      "description": "Chats received FPS PAYMENT 1748590 TO: MPF OTHER",
+      "amount": 303.04,
+      "direction": "credit",
+      "balance": 150122.0,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-21",
+      "description": "Fps payment FASTER PAYMENT 4056036 TO: PARKnSHOP OTHER",
+      "amount": 11286.99,
+      "direction": "debit",
+      "balance": 138835.01,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-22",
+      "description": "Fps FPS TRANSFER 5047871 TO: CLP Power P1023774QR OTHER",
+      "amount": 219.06,
+      "direction": "debit",
+      "balance": 138615.95,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-23",
+      "description": "Faster payment received FPS 6678346 TO: Uniqlo HK OTHER",
+      "amount": 34690.79,
+      "direction": "credit",
+      "balance": 173306.74,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-23",
+      "description": "Fps received FPS PAYMENT 3097388 TO: RateSetter HK OTHER",
+      "amount": 506.03,
+      "direction": "credit",
+      "balance": 173812.77,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-24",
+      "description": "Faster payment FPS 4492099 TO: Netflix P4534921QR OTHER",
+      "amount": 3816.32,
+      "direction": "debit",
+      "balance": 169996.45,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-27",
+      "description": "Fps FPS 9447144 TO: Wellcome P9473185QR OTHER",
+      "amount": 346.92,
+      "direction": "debit",
+      "balance": 169649.53,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-27",
+      "description": "Fps credit FPS TRANSFER 6073478 TO: HKIRD OTHER",
+      "amount": 631.17,
+      "direction": "credit",
+      "balance": 170280.7,
+      "account_id": "acc-usd-savings"
+    },
+    {
+      "date": "2025-09-30",
+      "description": "Fps payment FASTER PAYMENT 8134726 TO: Smartone HK OTHER",
+      "amount": 129.85,
+      "direction": "debit",
+      "balance": 170150.85,
+      "account_id": "acc-usd-savings"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "statement_id": "bsb-001",
+  "bank": "Straits Capital",
+  "country": "SG",
+  "currency": "SGD",
+  "opening_balance": 15450.75,
+  "closing_balance": 15271.23,
+  "total_debits": 2181.67,
+  "total_credits": 2002.15,
+  "transactions": [
+    {
+      "date": "2025-01-01",
+      "description": "Paynow from PAYNOW TRANSFER 8373579 TO: Corp Holdings P4583998QR",
+      "amount": 1902.69,
+      "direction": "credit",
+      "balance": 17353.44
+    },
+    {
+      "date": "2025-01-01",
+      "description": "Paynow PAYNOW TO 9547491 TO: Guardian Health & Beauty",
+      "amount": 70.64,
+      "direction": "debit",
+      "balance": 17282.8
+    },
+    {
+      "date": "2025-01-01",
+      "description": "Fast debit PAYNOW TRANSFER 7246426 TO: SP Group OTHER",
+      "amount": 14.47,
+      "direction": "debit",
+      "balance": 17268.33
+    },
+    {
+      "date": "2025-01-01",
+      "description": "Paynow received PAYNOW TRANSFER 2141011 TO: Original Merchant",
+      "amount": 69.63,
+      "direction": "credit",
+      "balance": 17337.96
+    },
+    {
+      "date": "2025-01-12",
+      "description": "Fast received PAYNOW 5979135 TO: Employer Pte Ltd P1377026QR OTHER",
+      "amount": 29.83,
+      "direction": "credit",
+      "balance": 17367.79
+    },
+    {
+      "date": "2025-01-17",
+      "description": "Paynow qr PAYNOW 9348807 TO: Cold Storage Singapore Pte Ltd P1185585QR",
+      "amount": 528.75,
+      "direction": "debit",
+      "balance": 16839.04
+    },
+    {
+      "date": "2025-01-26",
+      "description": "Paynow qr PAYNOW QR 9752510 TO: Lazada Group",
+      "amount": 218.18,
+      "direction": "debit",
+      "balance": 16620.86
+    },
+    {
+      "date": "2025-01-27",
+      "description": "Paynow PAYNOW QR 1564488 TO: Grab Holdings P2765200QR",
+      "amount": 45.89,
+      "direction": "debit",
+      "balance": 16574.97
+    },
+    {
+      "date": "2025-01-28",
+      "description": "Paynow qr PAYNOW TO 1681972 TO: Cold Storage Singapore Pte Ltd P4519868QR",
+      "amount": 15.18,
+      "direction": "debit",
+      "balance": 16559.79
+    },
+    {
+      "date": "2025-01-28",
+      "description": "Paynow to PAYNOW TO 5967276 TO: H&M Hennes & Mauritz",
+      "amount": 36.29,
+      "direction": "debit",
+      "balance": 16523.5
+    },
+    {
+      "date": "2025-01-30",
+      "description": "Fast debit PAYNOW TO 9521556 TO: Sheng Siong Group Ltd P4825006QR OTHER",
+      "amount": 1230.27,
+      "direction": "debit",
+      "balance": 15293.23
+    },
+    {
+      "date": "2025-01-31",
+      "description": "Fast PAYNOW TRANSFER 6622105 TO: McDonald's Restaurants Pte Ltd P9971842QR OTHER",
+      "amount": 22.0,
+      "direction": "debit",
+      "balance": 15271.23
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: bank-statement-extraction-api
+    runtime: python
+    region: frankfurt
+    plan: starter
+    branch: main
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: false
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: USE_ML_LINE_CLASSIFIER
+        value: "true"
+      - key: USE_HF_TRANSFORMERS
+        value: "false"
+      - key: HF_MODEL_NAME
+        value: typeform/distilbert-base-uncased-mnli
+      - key: HF_HUB_DISABLE_XET
+        value: "1"
+      - key: MAX_UPLOAD_SIZE_BYTES
+        value: "20971520"
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      # Optional: set API_KEY to require X-API-Key header authentication
+      - key: API_KEY
+        sync: false

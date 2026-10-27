@@ -1,0 +1,61 @@
+{
+  "statement_id": "bank_muscat",
+  "bank": "Bank Muscat",
+  "country": "OM",
+  "currency": "OMR",
+  "opening_balance": 1500.0,
+  "closing_balance": 2199.5,
+  "total_debits": 221.5,
+  "total_credits": 921.0,
+  "transactions": [
+    {
+      "date": "2025-01-02",
+      "description": "SALARY CREDIT PETROLEUM DEV OMAN EMPLOYEE ID PDO-99120",
+      "amount": 850.5,
+      "direction": "credit",
+      "balance": 2350.5
+    },
+    {
+      "date": "2025-01-05",
+      "description": "ATM CASH WITHDRAWAL MUSCAT GRAND MALL ATM",
+      "amount": 50.0,
+      "direction": "debit",
+      "balance": 2300.5
+    },
+    {
+      "date": "2025-01-10",
+      "description": "POS PURCHASE LULU HYPERMARKET BAUSHER STORE 12",
+      "amount": 45.25,
+      "direction": "debit",
+      "balance": 2255.25
+    },
+    {
+      "date": "2025-01-15",
+      "description": "UTILITY BILL PAYMENT OMANTEL ACCOUNT 96899128",
+      "amount": 25.75,
+      "direction": "debit",
+      "balance": 2229.5
+    },
+    {
+      "date": "2025-01-20",
+      "description": "FUNDS TRANSFER TO SALIM AL-BALUSHI FAMILY SUPPORT PAYMENT",
+      "amount": 100.0,
+      "direction": "debit",
+      "balance": 2129.5
+    },
+    {
+      "date": "2025-01-25",
+      "description": "DIVIDEND CREDIT OMINVEST SECURITIES ANNUAL DISTRIBUTION 2024",
+      "amount": 70.5,
+      "direction": "credit",
+      "balance": 2200.0
+    },
+    {
+      "date": "2025-01-31",
+      "description": "MONTHLY SERVICE FEE ACCOUNT MAINTENANCE CHARGE",
+      "amount": 0.5,
+      "direction": "debit",
+      "balance": 2199.5
+    }
+  ]
+}
