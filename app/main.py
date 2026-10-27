@@ -6,6 +6,7 @@ Built for the Bank Muscat BRD Series with FastAPI, scikit-learn, and Hugging Fac
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.types import Scope, Receive, Send
 from app.api.endpoints import router as api_router
 
 app = FastAPI(
@@ -21,6 +22,27 @@ app = FastAPI(
     redoc_url="/redoc",
     redirect_slashes=False
 )
+
+
+class PrefixRewriteMiddleware:
+    """
+    Middleware to normalize Vercel serverless rewritten paths.
+    Rewrites paths like '/api/index/docs' -> '/docs' and '/api/index/health' -> '/health'
+    so that built-in FastAPI routes (/docs, /openapi.json, /redoc) and application routes
+    match seamlessly without 404s.
+    """
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send):
+        if scope["type"] == "http":
+            path = scope.get("path", "")
+            if path.startswith("/api/index"):
+                scope["path"] = path[len("/api/index"):] or "/"
+        await self.app(scope, receive, send)
+
+
+app.add_middleware(PrefixRewriteMiddleware)
 
 # Enable CORS for banking analytics frontend clients
 raw_origins = os.getenv("ALLOWED_ORIGINS", "*")
