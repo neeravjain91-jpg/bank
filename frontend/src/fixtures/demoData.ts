@@ -1,0 +1,170 @@
+import { ExtractionResponse, Row, Transaction } from '../types'
+
+/**
+ * EXACT RECREATION OF USER SCREENSHOT SAMPLE STATEMENT
+ * Filename: statement_sep_2026.pdf (184 KB, 2 pages)
+ * Table: 1 detected, 8 rows, 5 columns, 98.2% confidence
+ */
+export const SAMPLE_ROWS: Row[] = [
+  {
+    id: 'row_1',
+    date: '02 Sep 2026',
+    description: 'Salary credit · ACME LLC',
+    debit: null,
+    credit: 1850.0,
+    balance: 3412.45,
+    category: 'Income',
+    confidence: 0.985,
+    needsReview: false,
+    currency: 'OMR',
+  },
+  {
+    id: 'row_2',
+    date: '03 Sep 2026',
+    description: 'Lulu Hypermarket Muscat',
+    debit: 42.35,
+    credit: null,
+    balance: 3370.1,
+    category: 'Groceries',
+    confidence: 0.952,
+    needsReview: false,
+    currency: 'OMR',
+  },
+  {
+    id: 'row_3',
+    date: '04 Sep 2026',
+    description: 'Omantel postpaid bill',
+    debit: 18.0,
+    credit: null,
+    balance: 3352.1,
+    category: 'Utilities',
+    confidence: 0.924,
+    needsReview: false,
+    currency: 'OMR',
+  },
+  {
+    id: 'row_4',
+    date: '05 Sep 2026',
+    description: 'Shell fuel station',
+    debit: 12.5,
+    credit: null,
+    balance: 3339.6,
+    category: 'Transport',
+    confidence: 0.887,
+    needsReview: false,
+    currency: 'OMR',
+  },
+  {
+    id: 'row_5',
+    date: '07 Sep 2026',
+    description: 'ATM withdrawal · Al Khuwair',
+    debit: 100.0,
+    credit: null,
+    balance: 3239.6,
+    category: 'Cash',
+    confidence: 0.971,
+    needsReview: false,
+    currency: 'OMR',
+  },
+  {
+    id: 'row_6',
+    date: '09 Sep 2026',
+    description: 'Transfer from M. Al Harthy',
+    debit: null,
+    credit: 250.0,
+    balance: 3489.6,
+    category: 'Transfers',
+    confidence: 0.943,
+    needsReview: false,
+    currency: 'OMR',
+  },
+  {
+    id: 'row_7',
+    date: '11 Sep 2026',
+    description: 'Talabat food order',
+    debit: 9.75,
+    credit: null,
+    balance: 3479.85,
+    category: 'Dining',
+    confidence: 0.45,
+    needsReview: true, // "Review · low-confidence amount"
+    currency: 'OMR',
+  },
+  {
+    id: 'row_8',
+    date: '14 Sep 2026',
+    description: 'Electricity bill payment',
+    debit: 27.4,
+    credit: null,
+    balance: 3452.45,
+    category: 'Utilities',
+    confidence: 0.932,
+    needsReview: false,
+    currency: 'OMR',
+  },
+]
+
+export const SAMPLE_FILE_METADATA = {
+  fileName: 'statement_sep_2026.pdf',
+  pages: 2,
+  sizeKb: 184,
+  profile: 'Auto-detect',
+  confidence: 98.2,
+  tableCount: 1,
+  rowCount: 8,
+  colCount: 5,
+  openingBalance: 1562.45,
+  closingBalance: 3452.45,
+}
+
+// Convert SAMPLE_ROWS to ExtractionResponse format for backward compatibility
+export const DEMO_BANK_MUSCAT_FIXTURE: ExtractionResponse = {
+  metadata: {
+    content_hash: 'sample_sep_2026_hash',
+    file_name: 'statement_sep_2026.pdf',
+    page_count: 2,
+    bank: 'Bank Muscat',
+    profile_used: 'bank_muscat',
+    currency: 'OMR',
+    transaction_count: 8,
+    extraction_method: 'ml_enhanced',
+    processing_time_seconds: 0.142,
+  },
+  accounts: [
+    {
+      id: 'acc_01',
+      account_number: '0315001234560018',
+      name: 'Neerav Jain',
+      currency: 'OMR',
+      opening_balance: 1562.45,
+      closing_balance: 3452.45,
+    },
+  ],
+  transactions: SAMPLE_ROWS.map((r) => {
+    const isDebit = r.debit !== null && r.debit > 0
+    return {
+      _id: r.id,
+      date: r.date,
+      description: r.description,
+      amount: isDebit ? (r.debit ?? 0) : (r.credit ?? 0),
+      direction: isDebit ? 'debit' : 'credit',
+      balance: r.balance,
+      currency: 'OMR',
+      category: r.category,
+      _needsReview: r.needsReview,
+      _categoryConfidence: r.confidence,
+    } as Transaction
+  }),
+  validation: {
+    reconciled: true,
+    opening_balance: 1562.45,
+    closing_balance: 3452.45,
+    calculated_closing_balance: 3452.45,
+    total_debits: 210.0,
+    total_credits: 2100.0,
+    net_change: 1890.0,
+    discrepancy_count: 0,
+    discrepancies: [],
+    warnings: [],
+  },
+}

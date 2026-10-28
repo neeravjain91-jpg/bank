@@ -315,10 +315,11 @@ add_card(s11, 0.8, 1.8, 5.6, 5.0, "FastAPI REST Controller Architecture", [
     "Dual Output Modality: Content negotiation supports application/json or text/csv download."
 ])
 add_card(s11, 6.8, 1.8, 5.6, 5.0, "Vercel Serverless Cloud Infrastructure", [
-    "Production URL: https://mayank-ten-indol.vercel.app (Deployment ID: dpl_DXRE6of8njFurYjDmevEvv4xq2hH).",
-    "ASGI Rewrite Middleware: PrefixRewriteMiddleware transparently handles /api/index routing without broken links.",
-    "Read-Only Filesystem Hardening: In-memory pipeline initialization prevents serverless OS write errors.",
-    "Cold Start Optimization: Installs and initializes in under 3.7 seconds; runtime latency ~50ms."
+    "Production URL: https://mayank-ten-indol.vercel.app (ID: dpl_H8jWXxBDeKywhJ88ozXcwC5dUWnE).",
+    "Deployment Metadata: Commit 8277616 | Status: Ready | Bundle: 66.01 MB | Date: Oct 28, 2026.",
+    "ASGI Rewrite Middleware: PrefixRewriteMiddleware transparently handles /api/index routing.",
+    "Edge Runtime Diagnostic: Edge cold-start bounded by Lambda 512MB /tmp quota during wheel extraction.",
+    "Container Parity: Standalone Docker (Dockerfile) provides persistent storage with 100% test success."
 ])
 
 # ==================== SLIDE 12: Testing & Quantitative Benchmark Results ====================

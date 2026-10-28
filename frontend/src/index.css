@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F3F6F9;
+    color: #0B2545;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-mono, [data-mono="true"], td.mono-cell {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom design system utility classes */
+.fintech-card {
+  background: #FFFFFF;
+  border: 1px solid #DDE3EA;
+  border-radius: 14px;
+}
+
+.text-navy {
+  color: #0B2545;
+}
+
+.bg-navy {
+  background-color: #0B2545;
+}
+
+.text-muted-custom {
+  color: #55657A;
+}
+
+.text-teal-custom {
+  color: #0E7C86;
+}
+
+.bg-teal-custom {
+  background-color: #0E7C86;
+}
+
+.bg-light-teal {
+  background-color: #E3F4F5;
+}
+
+.border-teal-custom {
+  border-color: #0E7C86;
+}
+
+.text-credit {
+  color: #0B7A4B;
+}
+
+.text-debit {
+  color: #B42318;
+}
+
+.review-badge {
+  background-color: #FFF8E6;
+  border: 1px solid #F0D58C;
+  color: #6B4200;
+}

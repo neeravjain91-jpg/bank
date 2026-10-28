@@ -36,6 +36,12 @@ htmlcov/
 .vscode/
 .idea/
 
+# Frontend
+node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/*.local
+
 # Large data & artifacts
 data/raw/*
 !data/raw/.gitkeep
